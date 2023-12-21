@@ -23,7 +23,7 @@ export default function Nav() {
   }
 
   return (
-    <nav className="flex justify-between p-5 items-center mx-auto text-white ">
+    <nav className="flex justify-between max-w-[1280px] p-10 items-center mx-auto text-white ">
       <div className="flex gap-x-4">
         <HandleIcon
           link="https://www.linkedin.com/in/anthony-cakin/"

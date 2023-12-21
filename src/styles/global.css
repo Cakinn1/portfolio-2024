@@ -7,12 +7,14 @@
 
  MAIN
 
-
-*/
+*/ 
+ @import url('https://fonts.googleapis.com/css2?family=Cambo&display=swap');
 
 .scroll {
   overflow: hidden;
 }
+
+
 
 /* 
 
@@ -61,11 +63,14 @@
 /* 
 
 
-HOMEPAGE ANIMATION
+HOMEPAGE 
 
 
 */
 
+.header {
+  font-family: 'Cambo', serif;
 
+}
 
 

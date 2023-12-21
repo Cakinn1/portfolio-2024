@@ -18,7 +18,7 @@ export default function Landing() {
   return (
     <section
       style={{ height: "calc(100vh - 110px)" }}
-      className="text-white text-center w-full p-5 flex justify-center items-center"
+      className="text-white text-center mx-auto max-w-[1280px] p-10 w-full flex justify-center items-center"
     >
       <div className="space-y-8 mb-[90px] w-[800px/] mx-auto">
         <figure className="flex justify-center items-center">
