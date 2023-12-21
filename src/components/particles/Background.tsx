@@ -1,11 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { type Container, type ISourceOptions } from "@tsparticles/engine";
-// import { MoveDirection, OutMode } from "@tsparticles/engine";
-
 // import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
-// import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
-import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
+// import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
 enum MoveDirection {
@@ -27,7 +25,7 @@ export const Background = () => {
       // starting from v2 you can add only the features you need reducing the bundle size
       //await loadAll(engine);
       //await loadFull(engine);
-      await loadSlim(engine);
+      await loadFull(engine);
       //await loadBasic(engine);
     }).then(() => {
       setInit(true);
@@ -590,7 +588,7 @@ export const Background = () => {
             type: "images",
             options: {
               images: {
-                src: "https://particles.js.org/images/cyan_amongus.png",
+                src: "https://",
                 width: 500,
                 height: 634,
               },
@@ -644,6 +642,7 @@ export const Background = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
+        style={{ height: "100vh" }}
       />
     );
   }

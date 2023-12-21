@@ -1,0 +1,40 @@
+import React, { useState } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { IoNewspaperOutline } from "react-icons/io5";
+import { IoMdMail } from "react-icons/io";
+import { NavProps } from "../typings/types";
+export default function Nav() {
+  function HandleIcon({ icon, link }: NavProps) {
+    const [isHovered, setIsHovered] = useState<boolean>(false);
+    return (
+      <a
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        target={link === "mailto:anthonycakins@gmail.com" || link === "" ? "" : "_blank"}
+        className="hover:scale-110  flex flex-col items-center  duration-300 active:scale-75"
+        href={link}
+      >
+        <div className="text-3xl">{icon}</div>
+        {isHovered && link === "" && (
+          <h1 className="hover-h1 duration-300 absolute -bottom-10">Blog</h1>
+        )}
+      </a>
+    );
+  }
+
+  return (
+    <nav className="max-w-[1280px] flex justify-between items-center mx-auto text-white p-5">
+      <div className="flex gap-x-4">
+        <HandleIcon
+          link="https://www.linkedin.com/in/anthony-cakin/"
+          icon={<FaLinkedin />}
+        />
+        <HandleIcon link="https://github.com/Cakinn1" icon={<FaGithub />} />
+      </div>
+      <div className="flex gap-x-4">
+        <HandleIcon link="" icon={<IoNewspaperOutline />} />
+        <HandleIcon link="mailto:anthonycakins@gmail.com" icon={<IoMdMail />} />
+      </div>
+    </nav>
+  );
+}
