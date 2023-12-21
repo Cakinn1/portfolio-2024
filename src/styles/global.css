@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+
+
+ MAIN
+
+
+*/
+
+.scroll {
+  overflow: hidden;
+}
+
+/* 
+
+
+ ONLOAD ANIMATION
+
+
+*/
+
+.animate__loading {
+  position: absolute;
+  bottom: 0;
+  animation: load 3.2s ease-in-out forwards;
+}
+
+.animate__speed {
+  animation: speed 1.4s ease-in-out forwards;
+}
+
+@keyframes load {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-130px);
+  }
+}
+
+@keyframes speed {
+  0% {
+    transform: translateY(-130px);
+  }
+  100% {
+    transform: translateY(-1000px);
+  }
+}
+
+/* 
+
+
+ ONLOAD ANIMATION
+
+
+*/
+
+/* 
+
+
+HOMEPAGE ANIMATION
+
+
+*/
+
+
+
+
