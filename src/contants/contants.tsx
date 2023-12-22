@@ -96,17 +96,6 @@ export const projectData: ProjectProps[] = [
     Application: "NFT Marketplace",
   },
   {
-    github: "https://github.com/Cakinn1/Ecom-App-lib",
-    vercel: "https://ecom-app-lib.vercel.app/",
-    image: "/assets/project-images/lib.png",
-    info: {
-      mainPara:
-        "Library is a E-commerece site i developed to further knowledge on React.js & UI/UX Deisgn. The site features stunning and responsive UI, skeleton loading states & cart functionalities.",
-      title: "Library",
-    },
-    Application: "E-Commerece Site",
-  },
-  {
     github: "https://github.com/Cakinn1/Busy-Bee",
     vercel: "https://busy-bee-opal.vercel.app/",
     image: "/assets/project-images/lib.png",
@@ -116,5 +105,16 @@ export const projectData: ProjectProps[] = [
       title: "Busy Bee",
     },
     Application: "Social Media Site",
+  },
+  {
+    github: "https://github.com/Cakinn1/Ecom-App-lib",
+    vercel: "https://ecom-app-lib.vercel.app/",
+    image: "/assets/project-images/lib.png",
+    info: {
+      mainPara:
+        "Library is a E-commerece site i developed to further knowledge on React.js & UI/UX Deisgn. The site features stunning and responsive UI, skeleton loading states & cart functionalities.",
+      title: "Library",
+    },
+    Application: "E-Commerece Site",
   },
 ];

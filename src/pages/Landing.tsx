@@ -29,10 +29,10 @@ export default function Landing() {
           />
         </figure>
         <div className="">
-          <h1 className="text-[#6b7280] pb-2 tracking-[15px]  uppercase">
+          <h1 className="text-[#6b7280] text-sm md:text-[16px] pb-2 tracking-[15px]  uppercase">
             Software Engineer
           </h1>
-          <h1 className="text-4xl font-bold">
+          <h1 className="text-3xl md:text-4xl font-bold">
             <TypeWriter
               onInit={(typewriter) => {
                 typewriter

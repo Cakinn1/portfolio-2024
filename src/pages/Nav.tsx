@@ -10,11 +10,11 @@ export default function Nav() {
       <a
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        target={link === "mailto:anthonycakins@gmail.com" || link === "" ? "" : "_blank"}
+        target={link === "mailto:anthonycakins@gmail.com" || link === "#contact" ? "" : "_blank"}
         className="hover:scale-110  flex flex-col items-center  duration-300 active:scale-75"
         href={link}
       >
-        <div className="text-3xl">{icon}</div>
+        <div className="text-2xl md:text-3xl">{icon}</div>
         {isHovered && link === "" && (
           <h1 className="hover-h1 duration-300 absolute -bottom-10">Blog</h1>
         )}
@@ -32,7 +32,7 @@ export default function Nav() {
         <HandleIcon link="https://github.com/Cakinn1" icon={<FaGithub />} />
       </div>
       <div className="flex gap-x-4">
-        <HandleIcon link="" icon={<IoNewspaperOutline />} />
+        <HandleIcon link="#contact" icon={<IoNewspaperOutline />} />
         <HandleIcon link="mailto:anthonycakins@gmail.com" icon={<IoMdMail />} />
       </div>
     </nav>

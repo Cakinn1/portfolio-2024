@@ -20,10 +20,10 @@ export default function App() {
   }, [isLoading]);
 
   return (
-    <div className="scroll-smooth">
+    <div className="scroll-smooth overflow-x-hidden">
       <OnLoad isLoading={isLoading} />
       <Background />
-      <div className=" mx-auto">
+      <div className="mx-auto">
         <Nav />
         <Landing />
         <Landing2 />
