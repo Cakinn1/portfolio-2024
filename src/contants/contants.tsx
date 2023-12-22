@@ -98,7 +98,7 @@ export const projectData: ProjectProps[] = [
   {
     github: "https://github.com/Cakinn1/Busy-Bee",
     vercel: "https://busy-bee-opal.vercel.app/",
-    image: "/assets/project-images/lib.png",
+    image: "/assets/project-images/twitter.png",
     info: {
       mainPara:
         "Busy Bee is a social media web application I built to practise Next.js, Tailwind, Redux and Firebase. Features include CRUD functionality, posts, user authentication, likes, comments and server-side rendering",

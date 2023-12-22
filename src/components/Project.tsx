@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ProjectProps } from "../typings/types";
 import { FaGithub, FaLink } from "react-icons/fa";
-
+import AOS from 'aos';
 export default function Project({
   github,
   image,
@@ -9,12 +9,20 @@ export default function Project({
   vercel,
   Application,
 }: ProjectProps) {
+
+  useEffect(() => {
+  AOS.init()
+  }, [])
   return (
-    <section className=" mx-auto ">
+    <section 
+    data-aos="flip-left"
+    data-aos-duration="1000"
+    className=" mx-auto ">
+      
       <div className="group cursor-pointer mb-10 relative">
         <img
           src={image}
-          className="h-[500px] group-hover:object-bottom ease-linear  transition-all duration-1000 object-cover object-top md:w-[330px] lg:w-[380px]   w-[400px]"
+          className={`h-[500px] group-hover:object-bottom ease-linear  transition-all ${info.title === 'Busy Bee' ? "duration-[4000ms]" : "duration-1000"}  object-cover object-top md:w-[330px] lg:w-[380px]   w-[400px]`}
           alt=""
         />
         <div className="bg-[#1b1b1b] group-hover:h-14 h-0 duration-300  flex items-center justify-between px-3 absolute bottom-0 w-full text-white ">

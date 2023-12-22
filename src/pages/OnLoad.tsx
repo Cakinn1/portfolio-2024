@@ -44,7 +44,7 @@ export default function OnLoad({ isLoading }: { isLoading: boolean }) {
     <section
       className={`${
         isLoading ? "opacity-100" : "opacity-0  -z-50"
-      } bg-black z-50* text-white duration-300
+      } bg-black  text-white duration-300
       overflow-hidden pointer-events-none  absolute   w-full z-50 min-h-screen`}
     >
       <div

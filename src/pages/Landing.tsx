@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import TypeWriter from "typewriter-effect";
 import { ProjectLinks } from "../typings/types";
 import { projectLinksArray } from "../contants/contants";
+import Aos from "aos";
 export default function Landing() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   function ProjectLinks({ value, link }: ProjectLinks) {
     return (
       <a
@@ -28,7 +32,7 @@ export default function Landing() {
             alt=""
           />
         </figure>
-        <div className="">
+        <div data-aos="fade-down" data-aos-duration="1000" className="">
           <h1 className="text-[#6b7280] text-sm md:text-[16px] pb-2 tracking-[15px]  uppercase">
             Software Engineer
           </h1>

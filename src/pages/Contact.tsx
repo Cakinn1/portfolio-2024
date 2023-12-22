@@ -1,6 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
+import AOS from "aos";
 export default function Contact() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -49,69 +53,79 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="bg-white h-[80vh] relative mx-auto p-5 flex justify-center items-center  ">
-        {/* <img src="/assets/cover2.png" className="absolute h-[600px]  w- objec-cover" alt="" /> */}
+    <section
+      id="contact"
+      className="bg-white h-[80vh] relative mx-auto p-5 flex justify-center items-center  "
+    >
+      {/* <img src="/assets/cover2.png" className="absolute h-[600px]  w- objec-cover" alt="" /> */}
       <div className="p-5  max-w-[1200px] w-full ">
-
-        <h1 className="flex justify-center items-center uppercase text-[#4b5563] tracking-[15px]  text-[30px] ">
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="300"
+          className="flex justify-center items-center uppercase text-[#4b5563] tracking-[15px]  text-[30px] "
+        >
           Contact
         </h1>
 
-          <form className="w-[35%] py-[40px] mx-auto  space-y-4" onSubmit={sendEmail}>
-
-            <div>
-              <h1 className="font-bold">Name</h1>
-              <input
-                name="name"
-                type="text"
-                required
-                value={formData.name}
-                onChange={handleChange}
-                className="w-full rounded-md bg-gray-200 focus:outline-none px-4 py-2"
-              />
-            </div>
-            <div>
-              <h1 className="font-bold">Email</h1>
-              <input
-                name="email"
-                required
-                type="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full rounded-md bg-gray-200 focus:outline-none  px-4 py-2"
-              />
-            </div>
-            <div>
-              <h1 className="font-bold">Message</h1>
-              <textarea
-                name="message"
-                required
-                value={formData.message}
-                onChange={handleChange}
-                className="w-full h-[140px] resize-none rounded-md bg-gray-200 focus:outline-none px-4 py-2"
-              />
-            </div>
-            {loading ? (
-              <button
-                className="border  w-full bg-gray-300  animate-pulse duration-300 text-white h-[50px] p-3 rounded-2xl"
-                type="submit"
-              ></button>
-            ) : success ? (
-              <button
-                className="border  w-full border-green-500 p-3 rounded-2xl"
-                type="submit"
-              >
-                Thank you!
-              </button>
-            ) : (
-              <button
-                className="border w-full border-black p-3 rounded-2xl"
-                type="submit"
-              >
-                Submit
-              </button>
-            )}
-          </form>
+        <form
+          className="w-[400px] py-[40px] mx-auto  space-y-4"
+          onSubmit={sendEmail}
+        >
+          <div data-aos="fade-right" data-aos-duration="300">
+            <h1 className="font-bold">Name</h1>
+            <input
+              name="name"
+              type="text"
+              required
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full rounded-md bg-gray-200 focus:outline-none px-4 py-2"
+            />
+          </div>
+          <div data-aos="fade-right" data-aos-duration="600">
+            <h1 className="font-bold">Email</h1>
+            <input
+              name="email"
+              required
+              type="email"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full rounded-md bg-gray-200 focus:outline-none  px-4 py-2"
+            />
+          </div>
+          <div data-aos="fade-right" data-aos-duration="900">
+            <h1 className="font-bold">Message</h1>
+            <textarea
+              name="message"
+              required
+              value={formData.message}
+              onChange={handleChange}
+              className="w-full h-[140px] resize-none rounded-md bg-gray-200 focus:outline-none px-4 py-2"
+            />
+          </div>
+          {loading ? (
+            <button
+              className="border  w-full bg-gray-300  animate-pulse duration-300 text-white h-[50px] p-3 rounded-2xl"
+              type="submit"
+            ></button>
+          ) : success ? (
+            <button
+              className="border  w-full border-green-500 p-3 rounded-2xl"
+              type="submit"
+            >
+              Thank you!
+            </button>
+          ) : (
+            <button
+              data-aos="fade-right"
+              data-aos-duration="1200"
+              className="border w-full border-black p-3 rounded-2xl"
+              type="submit"
+            >
+              Submit
+            </button>
+          )}
+        </form>
       </div>
     </section>
   );

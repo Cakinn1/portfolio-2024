@@ -1,16 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoNewspaperOutline } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
 import { NavProps } from "../typings/types";
+import AOS from "aos";
 export default function Nav() {
   function HandleIcon({ icon, link }: NavProps) {
     const [isHovered, setIsHovered] = useState<boolean>(false);
+    useEffect(() => {
+      AOS.init();
+    }, []);
     return (
       <a
+        data-aos="fade-down"
+        data-aos-duration="1000"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        target={link === "mailto:anthonycakins@gmail.com" || link === "#contact" ? "" : "_blank"}
+        target={
+          link === "mailto:anthonycakins@gmail.com" || link === "#contact"
+            ? ""
+            : "_blank"
+        }
         className="hover:scale-110  flex flex-col items-center  duration-300 active:scale-75"
         href={link}
       >

@@ -1,11 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { currentStack, currentlyLearning } from "../contants/contants";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function TechStack() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   function HandleTechStack({ image, value }: { image: string; value: string }) {
     const [isHovered, setIsHovered] = useState<boolean>(false);
     return (
-      <div className=" w-[22%] md:w-[23%] lg:w-[17%]  space-y-6 h-[180px] md:h-[160px] flex-col  flex justify-center items-center">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="w-[22%] md:w-[23%] lg:w-[17%]  space-y-6 h-[180px] md:h-[160px] flex-col  flex justify-center items-center"
+      >
         <img
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
@@ -25,9 +33,16 @@ export default function TechStack() {
   }
 
   return (
-    <section id="skills" className="bg-white min-h-screen pt-[260px]/ pt-[100px]">
+    <section
+      id="skills"
+      className="bg-white min-h-screen pt-[260px]/ pt-[100px]"
+    >
       <div className="max-w-[1280px] mx-auto md:px-5">
-        <h1 className="flex text-[#4b5563] tracking-[15px]  text-[30px] justify-center items-center">
+        <h1
+          data-aos="fade-down"
+          data-aos-duration="400"
+          className="flex text-[#4b5563] tracking-[15px]  text-[30px] justify-center items-center"
+        >
           TECH <span>-</span> STACK
         </h1>
         <div className="p-10 pt-[80px] pb-[40px]">
@@ -42,7 +57,11 @@ export default function TechStack() {
           </div>
         </div>
         <div>
-          <h1 className="flex uppercase text-[#4b5563] tracking-[15px]  text-[30px] justify-center items-center">
+          <h1
+            data-aos="fade-down"
+            data-aos-duration="400"
+            className="flex uppercase text-[#4b5563] tracking-[15px]  text-[30px] justify-center items-center"
+          >
             Currently <span>-</span> Learning
           </h1>
           <div className="p-10 pt-[80px] pb-[40px]">
