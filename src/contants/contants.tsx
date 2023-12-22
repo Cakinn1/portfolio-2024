@@ -1,4 +1,4 @@
-import { ImageArrayProps, ProjectLinks } from "../typings/types";
+import { ImageArrayProps, ProjectLinks, Stack } from "../typings/types";
 
 export const imageArray: ImageArrayProps[] = [
   { width: "46px", bottomSize: "6", otherSize: "" },
@@ -33,5 +33,47 @@ export const projectLinksArray: ProjectLinks[] = [
   {
     link: "https://docs.google.com/document/d/1nr0BbmL9dMnSc6VOzTUdeh5AxknSbB8c/edit?pli=1",
     value: "resume",
+  },
+];
+
+export const currentStack: Stack[] = [
+  {
+    "html.webp": "HTML",
+  },
+  {
+    "CSS.webp": "CSS",
+  },
+  {
+    "js.webp": "JavaScript",
+  },
+  {
+    "typescript.webp": "TypeScript",
+  },
+  {
+    "tailwindcss.webp": "Tailwind CSS",
+  },
+  {
+    "redux.webp": "Redux | Redux-toolkit",
+  },
+  {
+    "react.webp": "React.js",
+  },
+  {
+    "nextjs.webp": "Next.js",
+  },
+  {
+    "firebase.webp": "Firebase",
+  },
+];
+
+export const currentlyLearning: Stack[] = [
+  {
+    "node.png": "Node.js",
+  },
+  {
+    "python.png": "Python",
+  },
+  {
+    "django.png": "Django",
   },
 ];

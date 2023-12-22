@@ -6,11 +6,11 @@ export default function OnLoad({ isLoading }: { isLoading: boolean }) {
   const [animationTimer, setAnimationTimer] = useState<boolean>(true);
 
   useEffect(() => {
-    // on load, make sure scroll is added to body
+
     if (isLoading) {
+     window.scrollTo(0, 0)
       document.body.classList.add("scroll");
     } else {
-      // unadd scroll after completion
       document.body.classList.remove("scroll");
     }
 

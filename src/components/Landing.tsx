@@ -45,7 +45,7 @@ export default function Landing() {
                   .typeString("A Passionate Frontend Developer")
                   .pauseFor(2000)
                   .deleteAll()
-                  .typeString("Software Engineer")
+                  .typeString("A Problem Solver")
                   .start();
               }}
             />
