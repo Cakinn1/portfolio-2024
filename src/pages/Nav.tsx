@@ -24,7 +24,7 @@ export default function Nav() {
         className="hover:scale-110  flex flex-col items-center  duration-300 active:scale-75"
         href={link}
       >
-        <div className="text-2xl md:text-3xl">{icon}</div>
+        <div className="text-2xl md:text-3xl duration-300 active:scale-75 hover:scale-110">{icon}</div>
         {isHovered && link === "" && (
           <h1 className="hover-h1 duration-300 absolute -bottom-10">Blog</h1>
         )}
