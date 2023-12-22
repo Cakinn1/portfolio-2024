@@ -60,10 +60,22 @@ export default function TechStack() {
           <h1
             data-aos="fade-down"
             data-aos-duration="400"
-            className="flex uppercase text-[#4b5563] tracking-[15px]  text-[30px] justify-center items-center"
+            className="md:flex uppercase hidden text-[#4b5563] tracking-[15px]    text-[30px] justify-center items-center"
           >
-            Currently <span>-</span> Learning
+            Currently <span>-</span>
+            <span>Learning</span>
           </h1>
+
+          <h1
+            data-aos="fade-down"
+            data-aos-duration="400"
+            className="flex uppercase md:hidden text-[#4b5563] tracking-[15px]    text-[30px] justify-center items-center"
+          >
+            <span>Learning</span>
+          </h1>
+
+
+
           <div className="p-10 pt-[80px] pb-[40px]">
             <div className="flex flex-wrap gap-x-6 md:gap-x-0 justify-center">
               {currentlyLearning.map((icon) => (
