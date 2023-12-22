@@ -118,3 +118,72 @@ export const projectData: ProjectProps[] = [
     Application: "E-Commerece Site",
   },
 ];
+
+export const extraProjectData: ProjectProps[] = [
+  {
+    github: "https://github.com/Cakinn1/netflix-clone",
+    vercel: "https://netflix-clone-clone.vercel.app/login",
+    image: "/assets/extra-projects/netflix.png",
+    info: {
+      title: "Netflix",
+      mainPara:
+        "About A Car booking website. I created this app to improve my TypeScript skills & Redux skills",
+    },
+    Application: "Movie Site",
+  },
+  {
+    github: "https://github.com/Cakinn1/google-clone",
+    vercel: "https://google-clone-cakinn1.vercel.app/",
+    image: "/assets/extra-projects/google.png",
+    info: {
+      title: "Google Clone",
+      mainPara:
+        "About A Car booking website. I created this app to improve my TypeScript skills & Redux skills",
+    },
+    Application: "Search Engine Site",
+  },
+  {
+    github: "https://github.com/Cakinn1/Eportfolio-2023",
+    vercel: "https://eportfolio-2023.vercel.app/",
+    image: "/assets/extra-projects/port.png",
+    info: {
+      title: "Old Portfolio",
+      mainPara:
+        "About A Car booking website. I created this app to improve my TypeScript skills & Redux skills",
+    },
+    Application: "Old Portfolio",
+  },
+  {
+    github: "https://github.com/Cakinn1/carRental-app",
+    vercel: "https://car-rental-app-mu.vercel.app/",
+    image: "/assets/extra-projects/car.png",
+    info: {
+      title: "Car Rental",
+      mainPara:
+        "About A Car booking website. I created this app to improve my TypeScript skills & Redux skills",
+    },
+    Application: "Car Booking Site",
+  }, 
+  // {
+  //   github: "https://github.com/Cakinn1/Chrono",
+  //   vercel: "https://chrono-pi.vercel.app/",
+  //   image: "/assets/extra-projects/ultra.png",
+  //   info: {
+  //     title: "Chrono",
+  //     mainPara:
+  //       "About A Car booking website. I created this app to improve my TypeScript skills & Redux skills",
+  //   },
+  //   Application: "E-Commerece Site",
+  // },
+  {
+    github: "https://github.com/Cakinn1/Ecom-website-Anthony",
+    vercel: "https://ecom-website-theta.vercel.app/",
+    image: "/assets/extra-projects/ecom.png",
+    info: {
+      title: "Deco",
+      mainPara:
+        "About A Car booking website. I created this app to improve my TypeScript skills & Redux skills",
+    },
+    Application: "E-Commerece Site",
+  },
+];

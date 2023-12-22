@@ -2,10 +2,12 @@ import React, { useEffect } from "react";
 import Project from "../components/Project";
 import { projectData } from "../contants/contants";
 import AOS from "aos";
+import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 export default function Projects() {
   useEffect(() => {
-    AOS.init()
-  }, [])
+    AOS.init();
+  }, []);
   return (
     <section
       id="project"
@@ -31,7 +33,16 @@ export default function Projects() {
               key={i}
             />
           ))}
+          
         </div>
+        <Link to="/extra"
+          data-aos="fade-right"
+          data-aos-duration="500"
+          className="uppercase flex justify-center xl:justify-normal group text-center md:text-left  items-center gap-x-2 text-[#4b5563] tracking-[15px]  text-[30px] "
+        >
+          <h1 className="border-b cursor-pointer group-hover:border-black border-[#f8f8f8] duration-500 pb-2">Extra Projects</h1>
+          <FaArrowRight className="mb-2 hidden md:flex" />
+        </Link>
       </div>
     </section>
   );
