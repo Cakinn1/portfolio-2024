@@ -184,6 +184,17 @@ export const extraProjectData: ProjectProps[] = [
       mainPara:
         "About A Car booking website. I created this app to improve my TypeScript skills & Redux skills",
     },
-    Application: "E-Commerece Site",
+    Application: "E-Commerce Site",
+  },
+  {
+    github: "https://github.com/Cakinn1/2022-eportfolio",
+    vercel: "https://eportfolio-five.vercel.app/",
+    image: "/assets/extra-projects/2022port.png",
+    info: {
+      title: "Deco",
+      mainPara:
+        "About A Car booking website. I created this app to improve my TypeScript skills & Redux skills",
+    },
+    Application: "2022 Portfolio",
   },
 ];
