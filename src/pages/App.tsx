@@ -1,11 +1,12 @@
 import { useEffect, useMemo, useState } from "react";
-import OnLoad from "../components/OnLoad";
+import OnLoad from "./OnLoad";
 import { Background } from "../components/particles/Background";
 import Nav from "./Nav";
-import Landing from "../components/Landing";
-import Landing2 from "../components/Landing2";
-import TechStack from "../components/TechStack";
+import Landing from "./Landing";
+import Landing2 from "./Landing2";
+import TechStack from "./TechStack";
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -19,7 +20,7 @@ export default function App() {
   }, [isLoading]);
 
   return (
-    <>
+    <div className="scroll-smooth">
       <OnLoad isLoading={isLoading} />
       <Background />
       <div className=" mx-auto">
@@ -28,7 +29,8 @@ export default function App() {
         <Landing2 />
         <TechStack />
         <Projects />
+        <Contact />
       </div>
-    </>
+    </div>
   );
 }

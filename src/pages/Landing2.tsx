@@ -3,7 +3,7 @@ import React from "react";
 export default function Landing2() {
   return (
     
-    <div className="bg-gradient-to-b to-[#3e99d1] from-20%   from-black ">
+    <section id="about" className="bg-gradient-to-b to-[#3e99d1] from-20%   from-black ">
 
     <div className="text-white  max-w-[1280px] mx-auto   flex h-[270px] p-5">
       <div className="w-[55%]">
@@ -24,6 +24,6 @@ export default function Landing2() {
       </div>
     </div>
     <img src="/assets/clouds.webp" className="object-cover w-full" alt="" />
-    </div>
+    </section>
   );
 }

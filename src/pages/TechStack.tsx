@@ -25,7 +25,7 @@ export default function TechStack() {
   }
 
   return (
-    <section className="bg-white min-h-screen pt-[260px]/ pt-[100px]">
+    <section id="skills" className="bg-white min-h-screen pt-[260px]/ pt-[100px]">
       <div className="max-w-[1280px] mx-auto px-5">
         <h1 className="flex text-[#4b5563] tracking-[15px]  text-[30px] justify-center items-center">
           TECH <span>-</span> STACK

@@ -4,7 +4,7 @@ import { projectData } from "../contants/contants";
 
 export default function Projects() {
   return (
-    <section className="bg-[#f8f8f8] text-black h-screen px-5">
+    <section id="project" className="bg-[#f8f8f8] flex justify-center items-center text-black min-h-screen px-5">
       <div className="max-w-[1280px] mx-auto p-10">
         <h1 className="flex justify-center items-center uppercase text-[#4b5563] tracking-[15px]  text-[30px] ">
           Projects
