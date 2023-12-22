@@ -1,4 +1,9 @@
-import { ImageArrayProps, ProjectLinks, Stack } from "../typings/types";
+import {
+  ImageArrayProps,
+  ProjectLinks,
+  ProjectProps,
+  Stack,
+} from "../typings/types";
 
 export const imageArray: ImageArrayProps[] = [
   { width: "46px", bottomSize: "6", otherSize: "" },
@@ -75,5 +80,41 @@ export const currentlyLearning: Stack[] = [
   },
   {
     "django.png": "Django",
+  },
+];
+
+export const projectData: ProjectProps[] = [
+  {
+    github: "https://github.com/Cakinn1/Anthony-internship",
+    vercel: "https://anthony-internship.vercel.app/",
+    image: "/assets/project-images/ultra.png",
+    info: {
+      title: "Ultraverse",
+      mainPara:
+        "Ultraverse is my internship project built with React.js, tailwind & axios. During this internship i learnt how to create detail pull request, read documentation and explain why i programmed a feature.",
+    },
+    Application: "NFT Marketplace",
+  },
+  {
+    github: "https://github.com/Cakinn1/Ecom-App-lib",
+    vercel: "https://ecom-app-lib.vercel.app/",
+    image: "/assets/project-images/lib.png",
+    info: {
+      mainPara:
+        "Library is a E-commerece site i developed to further knowledge on React.js & UI/UX Deisgn. The site features stunning and responsive UI, skeleton loading states & cart functionalities.",
+      title: "Library",
+    },
+    Application: "E-Commerece Site",
+  },
+  {
+    github: "https://github.com/Cakinn1/Busy-Bee",
+    vercel: "https://busy-bee-opal.vercel.app/",
+    image: "/assets/project-images/lib.png",
+    info: {
+      mainPara:
+        "Busy Bee is a social media web application I built to practise Next.js, Tailwind, Redux and Firebase. Features include CRUD functionality, posts, user authentication, likes, comments and server-side rendering",
+      title: "Busy Bee",
+    },
+    Application: "Social Media Site",
   },
 ];

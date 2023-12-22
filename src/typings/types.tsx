@@ -26,3 +26,19 @@ export interface ProjectLinks {
 export interface Stack {
   [key: string]: string;
 }
+
+
+
+//  projects
+
+
+export interface ProjectProps {
+  github: string;
+  vercel: string;
+  info: {
+    title: string
+    mainPara: string
+  }
+  image: string;
+  Application: string
+}

@@ -5,7 +5,7 @@ import Nav from "./Nav";
 import Landing from "../components/Landing";
 import Landing2 from "../components/Landing2";
 import TechStack from "../components/TechStack";
-import Project from "./Project";
+import Projects from "./Projects";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -27,7 +27,7 @@ export default function App() {
         <Landing />
         <Landing2 />
         <TechStack />
-        <Project />
+        <Projects />
       </div>
     </>
   );
