@@ -12,19 +12,19 @@ export default function Landing2() {
     >
       <div 
       data-aos="fade-up" data-aos-duration="400" 
-      className="text-white  mb-[250px] md:mb-[100px] lg:mb-0  text-center md:text-left space-y-8 md:space-y-0 max-w-[1280px] mx-auto  flex-col md:flex-row  flex h-[270px] p-5">
+      className="text-white  mb-[200px] md:mb-[100px] lg:mb-0  text-center md:text-left space-y-8 md:space-y-0 max-w-[1280px] mx-auto  flex-col md:flex-row  flex h-[270px] p-5">
         <div className="w-[100%] md:w-[55%]">
-          <h1 className="text-[42px] header">
+          <h1 className="text-[32px] md:text-[42px] header">
             I'm a highly motivated frontend developer with a strong passion for
             web development.
           </h1>
         </div>
         <div className="w-[100%] md:w-[45%] space-y-4">
-          <p className="text-[20px]">
+          <p className="md:text-[20px]">
             I'm all about soaking up knowledge and embracing the exciting
             challenges in this ever-evolving tech world.
           </p>
-          <p className="text-[20px]">
+          <p className="md:text-[20px]">
             Continuously working towards improving my knowledge and skills to
             develop technologies that contribute to the betterment of society.
           </p>

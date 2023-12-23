@@ -62,13 +62,13 @@ export default function Contact() {
         <h1
           data-aos="fade-up"
           data-aos-duration="300"
-          className="flex justify-center items-center uppercase text-[#4b5563] tracking-[15px]  text-[30px] "
+          className="flex justify-center items-center uppercase text-[#4b5563] md:tracking-[15px] tracking-[10px]  text-[30px] "
         >
           Contact
         </h1>
 
         <form
-          className="w-[400px] py-[40px] mx-auto  space-y-4"
+          className=" md:w-[400px] py-[40px] mx-auto  space-y-4"
           onSubmit={sendEmail}
         >
           <div data-aos="fade-right" data-aos-duration="300">

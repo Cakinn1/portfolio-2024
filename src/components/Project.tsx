@@ -19,7 +19,7 @@ export default function Project({
     data-aos-duration="1000"
     className=" mx-auto ">
       
-      <div className="group cursor-pointer mb-10 relative">
+      <div className="group w cursor-pointer mb-10 relative">
         <img
           src={image}
           className={`h-[500px] group-hover:object-bottom ease-linear  transition-all ${info?.title === 'Busy Bee' || info?.title === "Old Portfolio" || info?.title === "Car Rental" || info?.title === "Deco" ? "duration-[4000ms]" : "duration-1000"}  object-cover object-top md:w-[330px] lg:w-[380px]   w-[400px]`}

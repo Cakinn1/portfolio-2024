@@ -12,7 +12,7 @@ export default function Landing() {
       <a
         href={`${value === "resume" ? `${link}` : `#${link}`}`}
         target={`${value === "resume" ? "_blank" : ""}`}
-        className="border hover:text-[#ffa76066] cursor-pointer duration-300 hover:border-[#ffa76066] rounded-full text-[#6b7280] text-[12px] tracking-wider border-opacity-40 border-[#6b7280] px-6 py-2 uppercase"
+        className="border hover:text-[#ffa76066] cursor-pointer duration-300 hover:border-[#ffa76066] rounded-full text-[#6b7280] md:text-[12px] text-[11px] p-2 tracking-wider border-opacity-40 border-[#6b7280] md:px-6 md:py-2 uppercase"
       >
         {value}
       </a>
@@ -33,10 +33,10 @@ export default function Landing() {
           />
         </figure>
         <div data-aos="fade-down" data-aos-duration="1000" className="">
-          <h1 className="text-[#6b7280] text-sm md:text-[16px] pb-2 tracking-[15px]  uppercase">
+          <h1 className="text-[#6b7280] text-[12px] md:text-[16px] pb-2 md:tracking-[15px] tracking-[10px]    uppercase">
             Software Engineer
           </h1>
-          <h1 className="text-3xl md:text-4xl font-bold">
+          <h1 className="md:text-4xl font-bold ">
             <TypeWriter
               onInit={(typewriter) => {
                 typewriter

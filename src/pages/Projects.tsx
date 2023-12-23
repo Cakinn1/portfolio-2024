@@ -13,11 +13,11 @@ export default function Projects() {
       id="project"
       className="bg-[#f8f8f8] flex justify-center items-center text-black min-h-screen px-5"
     >
-      <div className="max-w-[1280px] mx-auto p-10">
+      <div className="max-w-[1280px] mx-auto md:p-10">
         <h1
           data-aos="fade-down"
           data-aos-duration="1000"
-          className="flex justify-center items-center uppercase text-[#4b5563] tracking-[15px]  text-[30px] "
+          className="flex justify-center items-center uppercase text-[#4b5563] md:tracking-[15px] tracking-[10px]  text-[30px] "
         >
           Projects
         </h1>
@@ -40,7 +40,7 @@ export default function Projects() {
           data-aos-duration="500"
           className="uppercase flex justify-center xl:justify-normal group text-center md:text-left  items-center gap-x-2 text-[#4b5563] tracking-[15px]  text-[30px] "
         >
-          <h1 className="border-b cursor-pointer group-hover:border-black border-[#f8f8f8] duration-500 pb-2">Extra Projects</h1>
+          <h1 className="border-b cursor-pointer group-hover:border-black border-[#f8f8f8] duration-500 pb-2 md:tracking-[15px] tracking-[10px]  text-[30px]">Extra Projects</h1>
           <FaArrowRight className="mb-2 hidden md:flex" />
         </Link>
       </div>

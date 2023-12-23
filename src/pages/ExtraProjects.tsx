@@ -57,7 +57,7 @@ function TopHeader() {
     >
       <Link to="/" className="flex  group items-center gap-x-2">
         <FaArrowLeft className="group-hover:-translate-x-2 duration-100" />
-        <h1 className="flex  justify-center items-center text-lg ">
+        <h1 className="flex  justify-center items-center text-lg  ">
           Anthony Cakin
         </h1>
       </Link>

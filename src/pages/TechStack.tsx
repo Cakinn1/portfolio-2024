@@ -41,7 +41,7 @@ export default function TechStack() {
         <h1
           data-aos="fade-down"
           data-aos-duration="400"
-          className="flex text-[#4b5563] tracking-[15px]  text-[30px] justify-center items-center"
+          className="flex text-[#4b5563] md:tracking-[15px] tracking-[10px]  text-[30px] justify-center items-center"
         >
           TECH <span>-</span> STACK
         </h1>
@@ -69,7 +69,7 @@ export default function TechStack() {
           <h1
             data-aos="fade-down"
             data-aos-duration="400"
-            className="flex uppercase md:hidden text-[#4b5563] tracking-[15px]    text-[30px] justify-center items-center"
+            className="flex uppercase md:hidden text-[#4b5563] md:tracking-[15px] tracking-[10px]  text-[30px] justify-center items-center"
           >
             <span>Learning</span>
           </h1>
