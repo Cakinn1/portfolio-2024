@@ -24,7 +24,7 @@ export default function ExtraProjects() {
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="300"
-            className="px-10 py-6 text-red-500 font-bold"
+            className="px-10 py-6 text-center md:text-left text-red-500 font-bold"
           >
             Netflix clone will come up with a security error, Don't be alarmed
             this only occurs due to naming conventions on github and vercel.
