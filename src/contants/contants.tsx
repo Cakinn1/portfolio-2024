@@ -71,6 +71,7 @@ export const currentStack: Stack[] = [
   },
 ];
 
+
 export const currentlyLearning: Stack[] = [
   {
     "node.png": "Node.js",
