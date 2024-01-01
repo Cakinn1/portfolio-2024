@@ -1,13 +1,15 @@
 import React, { useEffect } from "react";
-import { ProjectProps } from "../typings/types";
+import { ProjectProps } from "../constants/types";
 import { FaGithub, FaLink } from "react-icons/fa";
 import AOS from "aos";
+import { Link } from "react-router-dom";
 export default function Project({
   github,
   image,
   info,
   vercel,
   Application,
+  id,
 }: ProjectProps) {
   useEffect(() => {
     AOS.init();
@@ -20,10 +22,10 @@ export default function Project({
       data-aos-duration="1000"
       className=" mx-auto "
     >
-      <div className="group w cursor-pointer mb-10 relative">
+      <div className="group w  mb-10 relative">
         <img
           src={image}
-          className={`h-[500px] group-hover:object-bottom ease-linear  transition-all ${
+          className={`h-[500px] cursor-pointer group-hover:object-bottom ease-linear  transition-all ${
             info?.title === "Busy Bee" ||
             info?.title === "Old Portfolio" ||
             info?.title === "Car Rental" ||
@@ -35,7 +37,13 @@ export default function Project({
         />
         <div className="bg-[#1b1b1b] group-hover:h-14 h-0 duration-300  flex items-center justify-between px-3 absolute bottom-0 w-full text-white ">
           <h1 className="font-bold hidden group-hover:flex ">{Application}</h1>
-          <div className=" hidden group-hover:flex items-center gap-x-4">
+          <div className="font-bold hidden group-hover:flex items-center gap-x-4">
+            <Link
+              className="hover:opacity-40 duration-300"
+              to={`/project/${id}`}
+            >
+              More Info
+            </Link>
             <a href={github} target="_blank">
               <FaGithub className="text-lg hover:scale-110 duration-300 active:scale-90" />
             </a>

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoNewspaperOutline } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
-import { NavProps } from "../typings/types";
+import { NavProps } from "../constants/types";
 import AOS from "aos";
 export default function Nav() {
   function HandleIcon({ icon, link }: NavProps) {
@@ -24,7 +24,9 @@ export default function Nav() {
         className="hover:scale-110  flex flex-col items-center  duration-300 active:scale-75"
         href={link}
       >
-        <div className="text-2xl md:text-3xl duration-300 active:scale-75 hover:scale-110">{icon}</div>
+        <div className="text-2xl md:text-3xl duration-300 active:scale-75 hover:scale-110">
+          {icon}
+        </div>
         {isHovered && link === "" && (
           <h1 className="hover-h1 duration-300 absolute -bottom-10">Blog</h1>
         )}

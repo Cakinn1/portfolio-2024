@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { ImageArrayProps } from "../typings/types";
-import { imageArray } from "../contants/contants";
+import { ImageArrayProps } from "../../constants/types";
+import { imageArray } from "../../constants/contants";
 
 export default function OnLoad({ isLoading }: { isLoading: boolean }) {
   const [animationTimer, setAnimationTimer] = useState<boolean>(true);
 
   useEffect(() => {
-
     if (isLoading) {
-     window.scrollTo(0, 0)
+      window.scrollTo(0, 0);
       document.body.classList.add("scroll");
     } else {
       document.body.classList.remove("scroll");
@@ -23,9 +22,6 @@ export default function OnLoad({ isLoading }: { isLoading: boolean }) {
     }
     //  unadd timeout after animation is completed. so there are no memory leaks
     return () => clearInterval(timeoutId);
-
-
-
   }, [isLoading, animationTimer]);
 
   function CreateImage({ width, bottomSize, otherSize }: ImageArrayProps) {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { currentStack, currentlyLearning } from "../contants/contants";
+import { currentStack, currentlyLearning } from "../../constants/contants";
 import AOS from "aos";
 import "aos/dist/aos.css";
 export default function TechStack() {
@@ -73,8 +73,6 @@ export default function TechStack() {
           >
             <span>Learning</span>
           </h1>
-
-
 
           <div className="p-10 pt-[80px] pb-[40px]">
             <div className="flex flex-wrap gap-x-6 md:gap-x-0 justify-center">

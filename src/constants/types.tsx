@@ -41,4 +41,5 @@ export interface ProjectProps {
   }
   image: string;
   Application: string
+  id: number
 }

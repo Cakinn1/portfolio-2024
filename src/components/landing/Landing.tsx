@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import TypeWriter from "typewriter-effect";
-import { ProjectLinks } from "../typings/types";
-import { projectLinksArray } from "../contants/contants";
+import { ProjectLinks } from "../../constants/types";
+import { projectLinksArray } from "../../constants/contants";
 import Aos from "aos";
 export default function Landing() {
   useEffect(() => {

@@ -3,7 +3,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import Project from "../components/Project";
-import { extraProjectData } from "../contants/contants";
+import { extraProjectData } from "../constants/contants";
 
 export default function ExtraProjects() {
   const [error, setError] = useState<boolean>(true);
@@ -33,6 +33,7 @@ export default function ExtraProjects() {
         <div className="py-[40px] flex flex-wrap">
           {extraProjectData.map((data, i) => (
             <Project
+              id={data.id}
               Application={data.Application}
               github={data.github}
               image={data.image}

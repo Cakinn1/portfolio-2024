@@ -1,9 +1,12 @@
-import {
-  ImageArrayProps,
-  ProjectLinks,
-  ProjectProps,
-  Stack,
-} from "../typings/types";
+import { ImageArrayProps, ProjectLinks, ProjectProps, Stack } from "./types";
+
+/* 
+
+
+Loading animation clouds
+
+
+*/
 
 export const imageArray: ImageArrayProps[] = [
   { width: "46px", bottomSize: "6", otherSize: "" },
@@ -21,6 +24,14 @@ export const imageArray: ImageArrayProps[] = [
   { width: "46px", bottomSize: "16", otherSize: "left-[24px]" },
   { width: "56px", bottomSize: "16", otherSize: "left-[24px]" },
 ];
+
+/* 
+
+
+Landing Page Project Links
+
+
+*/
 
 export const projectLinksArray: ProjectLinks[] = [
   {
@@ -40,6 +51,14 @@ export const projectLinksArray: ProjectLinks[] = [
     value: "resume",
   },
 ];
+
+/* 
+
+
+Tech Stack
+
+
+*/
 
 export const currentStack: Stack[] = [
   {
@@ -71,7 +90,6 @@ export const currentStack: Stack[] = [
   },
 ];
 
-
 export const currentlyLearning: Stack[] = [
   {
     "node.png": "Node.js",
@@ -84,8 +102,17 @@ export const currentlyLearning: Stack[] = [
   },
 ];
 
+/* 
+
+
+Main Projects
+
+
+*/
+
 export const projectData: ProjectProps[] = [
   {
+    id: 0,
     github: "https://github.com/Cakinn1/Anthony-internship",
     vercel: "https://anthony-internship.vercel.app/",
     image: "/assets/project-images/ultra.png",
@@ -97,6 +124,8 @@ export const projectData: ProjectProps[] = [
     Application: "NFT Marketplace",
   },
   {
+    id: 1,
+
     github: "https://github.com/Cakinn1/Busy-Bee",
     vercel: "https://busy-bee-opal.vercel.app/",
     image: "/assets/project-images/twitter.png",
@@ -108,6 +137,8 @@ export const projectData: ProjectProps[] = [
     Application: "Social Media Site",
   },
   {
+    id: 2,
+
     github: "https://github.com/Cakinn1/Ecom-App-lib",
     vercel: "https://ecom-app-lib.vercel.app/",
     image: "/assets/project-images/lib.png",
@@ -120,8 +151,18 @@ export const projectData: ProjectProps[] = [
   },
 ];
 
+/* 
+
+
+Extra Projects
+
+
+*/
+
 export const extraProjectData: ProjectProps[] = [
   {
+    id: 3,
+
     github: "https://github.com/Cakinn1/netflix-clone",
     vercel: "https://netflix-clone-clone.vercel.app/login",
     image: "/assets/extra-projects/netflix.png",
@@ -133,6 +174,8 @@ export const extraProjectData: ProjectProps[] = [
     Application: "Movie Site",
   },
   {
+    id: 4,
+
     github: "https://github.com/Cakinn1/google-clone",
     vercel: "https://google-clone-cakinn1.vercel.app/",
     image: "/assets/extra-projects/google.png",
@@ -144,6 +187,8 @@ export const extraProjectData: ProjectProps[] = [
     Application: "Search Engine Site",
   },
   {
+    id: 5,
+
     github: "https://github.com/Cakinn1/Eportfolio-2023",
     vercel: "https://eportfolio-2023.vercel.app/",
     image: "/assets/extra-projects/port.png",
@@ -155,6 +200,8 @@ export const extraProjectData: ProjectProps[] = [
     Application: "Old Portfolio",
   },
   {
+    id: 6,
+
     github: "https://github.com/Cakinn1/carRental-app",
     vercel: "https://car-rental-app-mu.vercel.app/",
     image: "/assets/extra-projects/car.png",
@@ -164,7 +211,7 @@ export const extraProjectData: ProjectProps[] = [
         "About A Car booking website. I created this app to improve my TypeScript skills & Redux skills",
     },
     Application: "Car Booking Site",
-  }, 
+  },
   // {
   //   github: "https://github.com/Cakinn1/Chrono",
   //   vercel: "https://chrono-pi.vercel.app/",
@@ -177,6 +224,8 @@ export const extraProjectData: ProjectProps[] = [
   //   Application: "E-Commerece Site",
   // },
   {
+    id: 7,
+
     github: "https://github.com/Cakinn1/Ecom-website-Anthony",
     vercel: "https://ecom-website-theta.vercel.app/",
     image: "/assets/extra-projects/ecom.png",
@@ -188,6 +237,8 @@ export const extraProjectData: ProjectProps[] = [
     Application: "E-Commerce Site",
   },
   {
+    id: 8,
+
     github: "https://github.com/Cakinn1/2022-eportfolio",
     vercel: "https://eportfolio-five.vercel.app/",
     image: "/assets/extra-projects/2022port.png",
