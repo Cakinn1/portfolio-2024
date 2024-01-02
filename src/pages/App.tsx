@@ -30,7 +30,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/extra" element={<ExtraProjects />} />
-          {/* <Route path="/project/:id" element={<SingleProject />} /> */}
+          <Route path="/project/:id" element={<SingleProject />} />
         </Routes>
       </Router>
     </div>

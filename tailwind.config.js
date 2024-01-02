@@ -5,8 +5,11 @@ module.exports = {
     extend: {
       transitionDuration: {
         2000: "2000ms",
-        3000: '3000ms',
-        4000: '4000ms'
+        3000: "3000ms",
+        4000: "4000ms",
+      },
+      aspectRatio: {
+        "4/3": "4 / 3",
       },
     },
   },

@@ -41,5 +41,8 @@ export interface ProjectProps {
   }
   image: string;
   Application: string
-  id: number
+  id: number 
+  skillsAndDeliverables?: string[]
+  video?: string
+  isFalse?: boolean
 }

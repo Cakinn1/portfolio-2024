@@ -10,6 +10,7 @@ export default function Project({
   vercel,
   Application,
   id,
+  isFalse,
 }: ProjectProps) {
   useEffect(() => {
     AOS.init();
@@ -38,12 +39,16 @@ export default function Project({
         <div className="bg-[#1b1b1b] group-hover:h-14 h-0 duration-300  flex items-center justify-between px-3 absolute bottom-0 w-full text-white ">
           <h1 className="font-bold hidden group-hover:flex ">{Application}</h1>
           <div className="font-bold hidden group-hover:flex items-center gap-x-4">
-            {/* <Link
-              className="hover:opacity-40 duration-300"
-              to={`/project/${id}`}
-            >
-              More Info
-            </Link> */}
+            {isFalse ? (
+              ""
+            ) : (
+              <Link
+                className="hover:opacity-40 duration-300"
+                to={`/project/${id}`}
+              >
+                More Info
+              </Link>
+            )}
             <a href={github} target="_blank">
               <FaGithub className="text-lg hover:scale-110 duration-300 active:scale-90" />
             </a>

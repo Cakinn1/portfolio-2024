@@ -119,8 +119,20 @@ export const projectData: ProjectProps[] = [
     info: {
       title: "Ultraverse",
       mainPara:
-        "Ultraverse is my internship project built with React.js, tailwind & axios. During this internship i learnt how to create detail pull request, read documentation and explain why i programmed a feature.",
+        "Ultraverse is my internship project built with React.js, Tailwind & Axios. During this internship i learnt how to create detail pull request, read documentation and explain why i programmed a feature.",
     },
+    video: "/assets/images/ultraverse.mp4",
+    skillsAndDeliverables: [
+      "React.js",
+      "Tailwind",
+      "Axios",
+      "Custom Api",
+      "Skeleton Loading",
+      "Vercel",
+      "Pull Request",
+      "Responsive Design",
+      "Version Control",
+    ],
     Application: "NFT Marketplace",
   },
   {
@@ -135,7 +147,22 @@ export const projectData: ProjectProps[] = [
       title: "Busy Bee",
     },
     Application: "Social Media Site",
+    video: "/assets/images/busybee.mp4",
+    skillsAndDeliverables: [
+      "Next.js",
+      "Redux",
+      "Tailwind",
+      "Firebase",
+      "Vercel",
+      "Dark Mode",
+      "Light Mode",
+      "Responsive Design",
+      "Authentication",
+      "CRUD functionality",
+      "Version Control",
+    ],
   },
+
   {
     id: 2,
 
@@ -148,6 +175,20 @@ export const projectData: ProjectProps[] = [
       title: "Library",
     },
     Application: "E-Commerece Site",
+    video: "/assets/images/lib.mp4",
+    skillsAndDeliverables: [
+      "Next.js",
+      "Redux",
+      "Tailwind",
+      "Firebase",
+      "Vercel",
+      "Dark Mode",
+      "Light Mode",
+      "Responsive Design",
+      "Authentication",
+      "CRUD functionality",
+      "Version Control",
+    ],
   },
 ];
 
@@ -172,6 +213,7 @@ export const extraProjectData: ProjectProps[] = [
         "About A Car booking website. I created this app to improve my TypeScript skills & Redux skills",
     },
     Application: "Movie Site",
+    isFalse: true,
   },
   {
     id: 4,
@@ -185,6 +227,7 @@ export const extraProjectData: ProjectProps[] = [
         "About A Car booking website. I created this app to improve my TypeScript skills & Redux skills",
     },
     Application: "Search Engine Site",
+    isFalse: true,
   },
   {
     id: 5,
@@ -197,7 +240,8 @@ export const extraProjectData: ProjectProps[] = [
       mainPara:
         "About A Car booking website. I created this app to improve my TypeScript skills & Redux skills",
     },
-    Application: "Old Portfolio",
+    Application: "2023 Portfolio",
+    isFalse: true,
   },
   {
     id: 6,
@@ -211,6 +255,7 @@ export const extraProjectData: ProjectProps[] = [
         "About A Car booking website. I created this app to improve my TypeScript skills & Redux skills",
     },
     Application: "Car Booking Site",
+    isFalse: true,
   },
   // {
   //   github: "https://github.com/Cakinn1/Chrono",
@@ -235,6 +280,7 @@ export const extraProjectData: ProjectProps[] = [
         "About A Car booking website. I created this app to improve my TypeScript skills & Redux skills",
     },
     Application: "E-Commerce Site",
+    isFalse: true,
   },
   {
     id: 8,
@@ -248,5 +294,6 @@ export const extraProjectData: ProjectProps[] = [
         "About A Car booking website. I created this app to improve my TypeScript skills & Redux skills",
     },
     Application: "2022 Portfolio",
+    isFalse: true,
   },
 ];
