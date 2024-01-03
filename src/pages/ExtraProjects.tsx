@@ -33,7 +33,7 @@ export default function ExtraProjects() {
         <div className="py-[40px] flex flex-wrap">
           {extraProjectData.map((data, i) => (
             <Project
-            isFalse={data.isFalse}
+              isFalse={data.isFalse}
               id={data.id}
               Application={data.Application}
               github={data.github}
