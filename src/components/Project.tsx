@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { ProjectProps } from "../constants/types";
 import { FaGithub, FaLink } from "react-icons/fa";
 import AOS from "aos";
@@ -16,7 +16,13 @@ export default function Project({
     AOS.init();
   }, []);
 
+  const [imageLoaded, setImageLoaded] = useState<boolean>(false)
+
   // test
+
+  function handleOnLoad () {
+    setImageLoaded(true)
+  }
   return (
     <section
       data-aos="flip-left"
@@ -26,6 +32,7 @@ export default function Project({
       <div className="group w  mb-10 relative">
         <img
           src={image}
+          onLoad={handleOnLoad}
           className={`h-[500px] cursor-pointer group-hover:object-bottom ease-linear  transition-all ${
             info?.title === "Busy Bee" ||
             info?.title === "Old Portfolio" ||
@@ -33,7 +40,7 @@ export default function Project({
             info?.title === "Deco"
               ? "duration-[4000ms]"
               : "duration-1000"
-          }  object-cover object-top md:w-[330px] lg:w-[380px]   w-[400px]`}
+          }  object-cover ${imageLoaded ? "" : "bg-gray-300 animate-pulse"} object-top md:w-[330px] lg:w-[380px]   w-[400px]`}
           alt=""
         />
         <div className="bg-[#1b1b1b] group-hover:h-14 h-0 duration-300  flex items-center justify-between px-3 absolute bottom-0 w-full text-white ">
