@@ -47,7 +47,7 @@ export const projectLinksArray: ProjectLinks[] = [
     value: "projects",
   },
   {
-    link: "https://docs.google.com/document/d/1nr0BbmL9dMnSc6VOzTUdeh5AxknSbB8c/edit?pli=1",
+    link: "https://docs.google.com/document/d/1IQXaoh5fmVeK0vIEM0W1Z2DqRLPROmcb/edit",
     value: "resume",
   },
 ];
