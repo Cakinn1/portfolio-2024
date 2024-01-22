@@ -3,7 +3,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import Project from "../components/Project";
-import { extraProjectData } from "../constants/contants";
+import { extraProjectData } from "../lib/contants";
 
 export default function ExtraProjects() {
   const [error, setError] = useState<boolean>(true);

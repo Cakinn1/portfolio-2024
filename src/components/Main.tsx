@@ -1,9 +1,10 @@
-import Landing from "./landing/Landing";
-import Landing2 from "./landingv2/Landing2";
-import TechStack from "./techstack/TechStack";
-import Projects from "./projects/Projects";
-import Contact from "./contact/Contact";
+import Landing from "../pages/Landing";
+import Landing2 from "../pages/Landing2";
+import TechStack from "../pages/TechStack";
+import Projects from "../pages/Projects";
+import Contact from "../pages/Contact";
 import Nav from "../pages/Nav";
+import Resume from "../pages/Resume";
 
 export default function Main() {
   return (
@@ -13,6 +14,7 @@ export default function Main() {
       <Landing2 />
       <TechStack />
       <Projects />
+      <Resume />
       <Contact />
     </>
   );

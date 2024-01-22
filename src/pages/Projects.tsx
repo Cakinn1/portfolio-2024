@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import Project from "../Project";
-import { projectData } from "../../constants/contants";
+import Project from "../components/Project";
+import { projectData } from "../lib/contants";
 import AOS from "aos";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";

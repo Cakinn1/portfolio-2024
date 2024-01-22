@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
-import { projectData } from "../constants/contants";
-import { ProjectProps } from "../constants/types";
+import { projectData } from "../lib/contants";
+import { ProjectProps } from "../lib/types";
 import { LuClipboardCopy } from "react-icons/lu";
 import { FaArrowLeft } from "react-icons/fa6";
 import { useEffect } from "react";

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { ImageArrayProps } from "../../constants/types";
-import { imageArray } from "../../constants/contants";
+import { ImageArrayProps } from "../lib/types";
+import { imageArray } from "../lib/contants";
 
 export default function OnLoad({ isLoading }: { isLoading: boolean }) {
   const [animationTimer, setAnimationTimer] = useState<boolean>(true);

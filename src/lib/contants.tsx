@@ -297,3 +297,13 @@ export const extraProjectData: ProjectProps[] = [
     isFalse: true,
   },
 ];
+
+/* 
+
+
+Resume
+
+
+*/
+
+

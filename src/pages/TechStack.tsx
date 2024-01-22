@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { currentStack, currentlyLearning } from "../../constants/contants";
+import { currentStack, currentlyLearning } from "../lib/contants";
 import AOS from "aos";
 import "aos/dist/aos.css";
 export default function TechStack() {

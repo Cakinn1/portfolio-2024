@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoNewspaperOutline } from "react-icons/io5";
 import { IoMdMail } from "react-icons/io";
-import { NavProps } from "../constants/types";
+import { NavProps } from "../lib/types";
 import AOS from "aos";
 export default function Nav() {
   function HandleIcon({ icon, link }: NavProps) {
