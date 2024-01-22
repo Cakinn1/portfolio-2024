@@ -9,12 +9,12 @@ import SingleProject from "./SingleProject";
 export default function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  // useEffect(() => {
-  //   const timeoutId = setTimeout(() => {
-  //     setIsLoading(false);
-  //   }, 4000);
-  //   return () => clearInterval(timeoutId);
-  // }, [isLoading]);
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+    return () => clearInterval(timeoutId);
+  }, [isLoading]);
 
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
@@ -38,7 +38,7 @@ export default function App() {
   return (
     <div className="scroll-smooth relative overflow-x-hidden">
       <div className="cursor-ring z-50"></div>
-      {/* <OnLoad isLoading={isLoading} /> */}
+      <OnLoad isLoading={isLoading} />
       <Background />
       <Router>
         <Routes>
