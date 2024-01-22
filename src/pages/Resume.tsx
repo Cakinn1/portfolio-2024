@@ -17,7 +17,7 @@ export default function Resume() {
       <div className="p-5 mx-auto max-w-[960px] space-y-12 w-full ">
         <h1
           data-aos="fade-up"
-          data-aos-duration="300"
+          data-aos-duration="1000"
           className="flex justify-center items-center uppercase text-[#4b5563] md:tracking-[15px] tracking-[10px]  text-[30px] "
         >
           Resume

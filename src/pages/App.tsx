@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Main from "../components/Main";
 import ExtraProjects from "./ExtraProjects";
 import SingleProject from "./SingleProject";
+import Mail from "../components/mail/Mail";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -38,6 +39,7 @@ export default function App() {
   return (
     <div className="scroll-smooth relative overflow-x-hidden">
       <div className="cursor-ring z-50"></div>
+      <Mail />
       <OnLoad isLoading={isLoading} />
       <Background />
       <Router>

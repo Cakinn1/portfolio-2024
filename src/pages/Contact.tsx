@@ -60,8 +60,8 @@ export default function Contact() {
       {/* <img src="/assets/cover2.png" className="absolute h-[600px]  w- objec-cover" alt="" /> */}
       <div className="p-5  max-w-[1200px] w-full ">
         <h1
-          data-aos="fade-up"
-          data-aos-duration="300"
+       data-aos="fade-up"
+       data-aos-duration="1000"
           className="flex justify-center items-center uppercase text-[#4b5563] md:tracking-[15px] tracking-[10px]  text-[30px] "
         >
           Contact
