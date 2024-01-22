@@ -134,6 +134,7 @@ export const projectData: ProjectProps[] = [
       "Version Control",
     ],
     Application: "NFT Marketplace",
+    onClickImage: "/assets/nft.png"
   },
   {
     id: 1,
@@ -146,7 +147,7 @@ export const projectData: ProjectProps[] = [
         "Busy Bee is a social media web application I built to practise Next.js, Tailwind, Redux and Firebase. Features include CRUD functionality, posts, user authentication, likes, comments and server-side rendering",
       title: "Busy Bee",
     },
-    Application: "Social Media Site",
+    Application: "Busy Bee",
     video: "/assets/images/busybee.mp4",
     skillsAndDeliverables: [
       "Next.js",
@@ -305,5 +306,3 @@ Resume
 
 
 */
-
-

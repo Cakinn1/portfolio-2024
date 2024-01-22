@@ -45,4 +45,5 @@ export interface ProjectProps {
   skillsAndDeliverables?: string[]
   video?: string
   isFalse?: boolean
+  onClickImage?: string
 }

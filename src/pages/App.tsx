@@ -41,7 +41,7 @@ export default function App() {
   return (
     <div className="scroll-smooth relative overflow-x-hidden">
       <div className="cursor-ring z-50"></div>
-      <BurgerMenu/>
+      <BurgerMenu />
       <Mail />
       <OnLoad isLoading={isLoading} />
       <Background />

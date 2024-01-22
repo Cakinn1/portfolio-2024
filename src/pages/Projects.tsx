@@ -25,6 +25,7 @@ export default function Projects() {
         <div className="py-[40px] mx-auto flex flex-wrap gap-x-4">
           {projectData.map((data, i) => (
             <Project
+              onClickImage={data.onClickImage}
               id={data.id}
               Application={data.Application}
               github={data.github}
