@@ -6,6 +6,8 @@ import Main from "../components/Main";
 import ExtraProjects from "./ExtraProjects";
 import SingleProject from "./SingleProject";
 import Mail from "../components/mail/Mail";
+import BurgerMenu from "../components/burgermenu/BurgerMenu";
+import Modal from "../components/burgermenu/Modal";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -39,6 +41,7 @@ export default function App() {
   return (
     <div className="scroll-smooth relative overflow-x-hidden">
       <div className="cursor-ring z-50"></div>
+      <BurgerMenu/>
       <Mail />
       <OnLoad isLoading={isLoading} />
       <Background />

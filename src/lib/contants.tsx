@@ -43,7 +43,7 @@ export const projectLinksArray: ProjectLinks[] = [
     value: "skills",
   },
   {
-    link: "project",
+    link: "projects",
     value: "projects",
   },
   {

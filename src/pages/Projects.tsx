@@ -10,12 +10,12 @@ export default function Projects() {
   }, []);
   return (
     <section
-      id="project"
+      id="projects"
       className="bg-[#f8f8f8] flex justify-center items-center text-black min-h-screen px-5"
     >
       <div className="max-w-[1280px] mx-auto md:p-10">
         <h1
-          data-aos="fade-down"
+          data-aos="fade-up"
           data-aos-duration="1000"
           className="flex justify-center items-center uppercase text-[#4b5563] md:tracking-[15px] tracking-[10px]  text-[30px] "
         >

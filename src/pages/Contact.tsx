@@ -55,7 +55,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="bg-white h-[80vh] relative mx-auto p-5 flex justify-center items-center  "
+      className="bg-[#f8f8f8] h-[80vh] relative mx-auto p-5 flex justify-center items-center  "
     >
       {/* <img src="/assets/cover2.png" className="absolute h-[600px]  w- objec-cover" alt="" /> */}
       <div className="p-5  max-w-[1200px] w-full ">
