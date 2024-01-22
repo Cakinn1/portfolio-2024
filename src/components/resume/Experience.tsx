@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SectionHeader from "./SectionHeader";
+import Aos from "aos";
 
 export default function Experience() {
   function Section({
@@ -37,12 +38,19 @@ export default function Experience() {
   }
 
 
+useEffect(() => {
+Aos.init()
+}, [])
+
+
 
 
 
 
   return (
-    <div className="pb-8 flex-1 gap-x-12 flex border-b my-8">
+    <div className="pb-8 flex-1 gap-x-12 flex border-b my-8"
+    data-aos="fade-up"
+    data-aos-duration="1000">
       <SectionHeader text="Experience" />
       <div className="flex flex-1 space-y-14 flex-col">
         <Section

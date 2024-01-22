@@ -1,9 +1,13 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement, useEffect } from "react";
 import { PiDownloadSimpleBold } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
+import Aos from "aos";
 
 export default function HeaderSecton() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   function RenderInfo({
     icon,
     text,
@@ -25,7 +29,11 @@ export default function HeaderSecton() {
     );
   }
   return (
-    <div className="flex flex-1 gap-x-6">
+    <div
+      className="flex flex-1 gap-x-6"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <figure>
         <img
           className="w-[166px] h-[166px] rounded-full"
@@ -58,7 +66,7 @@ export default function HeaderSecton() {
         <p className="text-[13px]">
           A highly motivated software engineer prepared to utilise exceptional
           software, problem-solving and communication skills to further my
-          programming passion as a website developer.
+          programming passion as a web developer.
         </p>
       </div>
     </div>

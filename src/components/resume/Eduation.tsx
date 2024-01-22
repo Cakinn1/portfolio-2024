@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SectionHeader from "./SectionHeader";
+import Aos from "aos";
 
 export default function Eduation() {
   function RenderEducation({
@@ -24,8 +25,16 @@ export default function Eduation() {
     );
   }
 
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
-    <div className="py-8 flex-1 gap-x-12 flex border-y my-8">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      className="py-8 flex-1 gap-x-12 flex border-y my-8"
+    >
       <SectionHeader text="Education" />
       <div className="flex flex-1 space-y-6 flex-col">
         <RenderEducation

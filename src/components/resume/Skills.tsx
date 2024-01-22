@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeaderSecton from "./HeaderSecton";
 import SectionHeader from "./SectionHeader";
+import Aos from "aos";
 
 interface SkillsProps {
   title: string;
@@ -19,8 +20,14 @@ interface SkillsProps {
 
 export default function Skills(props: SkillsProps) {
   const { n1, n10, n2, n3, n4, n5, n6, n7, n8, n9, title, isTrue } = props;
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
       className={` ${
         isTrue ? "border-b gap-x-11" : " gap-x-6"
       } mt-8 flex  flex-1 pb-8`}
