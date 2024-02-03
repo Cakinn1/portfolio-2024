@@ -3,7 +3,7 @@ import { ProjectProps } from "../lib/types";
 import { FaGithub, FaLink } from "react-icons/fa";
 import AOS from "aos";
 import { Link } from "react-router-dom";
-import Modal from "./projects/Modal";
+import Modal from "../components/projects/Modal";
 export default function Project({
   github,
   image,

@@ -24,7 +24,7 @@ export default function CurrentProjects() {
         <h1
           data-aos="fade-down"
           data-aos-duration="400"
-          className="flex text-[#4b5563] md:tracking-[15px] tracking-[10px]  text-[30px] justify-center items-center"
+          className="flex text-[#4b5563] pt-10 md:tracking-[15px] tracking-[10px]  text-[30px] justify-center items-center"
         >
           Projects
         </h1>

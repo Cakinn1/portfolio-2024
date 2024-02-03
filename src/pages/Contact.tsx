@@ -60,11 +60,11 @@ export default function Contact() {
       {/* <img src="/assets/cover2.png" className="absolute h-[600px]  w- objec-cover" alt="" /> */}
       <div className="p-5  max-w-[1200px] w-full ">
         <h1
-       data-aos="fade-up"
-       data-aos-duration="1000"
+          data-aos="fade-up"
+          data-aos-duration="1000"
           className="flex justify-center items-center uppercase text-[#4b5563] md:tracking-[15px] tracking-[10px]  text-[30px] "
         >
-          Contact
+          Get In Touch!
         </h1>
 
         <form
@@ -79,7 +79,7 @@ export default function Contact() {
               required
               value={formData.name}
               onChange={handleChange}
-              className="w-full rounded-md bg-gray-200 focus:outline-none px-4 py-2"
+              className="w-full rounded-md cursor-none focus:bg-opacity-75 duration-300 bg-gray-200 focus:outline-none px-4 py-2"
             />
           </div>
           <div data-aos="fade-right" data-aos-duration="600">
@@ -90,7 +90,7 @@ export default function Contact() {
               type="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full rounded-md bg-gray-200 focus:outline-none  px-4 py-2"
+              className="w-full cursor-none rounded-md focus:bg-opacity-75 duration-300 bg-gray-200 focus:outline-none  px-4 py-2"
             />
           </div>
           <div data-aos="fade-right" data-aos-duration="900">
@@ -100,17 +100,17 @@ export default function Contact() {
               required
               value={formData.message}
               onChange={handleChange}
-              className="w-full h-[140px] resize-none rounded-md bg-gray-200 focus:outline-none px-4 py-2"
+              className="w-full cursor-none h-[140px] focus:bg-opacity-75 duration-300 resize-none rounded-md bg-gray-200 focus:outline-none px-4 py-2"
             />
           </div>
           {loading ? (
             <button
-              className="border  w-full bg-gray-300  animate-pulse duration-300 text-white h-[50px] p-3 rounded-2xl"
+              className="border  w-full cursor-none bg-gray-200  animate-pulse duration-300 text-white h-[50px] p-3 rounded-2xl"
               type="submit"
             ></button>
           ) : success ? (
             <button
-              className="border  w-full border-green-500 p-3 rounded-2xl"
+              className="border cursor-none  w-full border-green-500 p-3 rounded-2xl"
               type="submit"
             >
               Thank you!
@@ -119,10 +119,10 @@ export default function Contact() {
             <button
               data-aos="fade-right"
               data-aos-duration="1200"
-              className="border w-full border-black p-3 rounded-2xl"
+              className=" bg-gray-200 hover:scale-110 duration-300 active:scale-90  cursor-none w-full  p-3 rounded-2xl"
               type="submit"
             >
-              Submit
+              Send Message
             </button>
           )}
         </form>

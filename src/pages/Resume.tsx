@@ -14,18 +14,17 @@ export default function Resume() {
 
   return (
     <section id="resume" className="bg-white font-mono  mx-auto lg:p-5 flex">
-      <div className="   lg:p-5 mx-auto max-w-[960px] space-y-12 w-full ">
+      <div className="lg:p-5 mx-auto max-w-[960px] space-y-12 w-full ">
         <h1
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="flex justify-center items-center uppercase text-[#4b5563] md:tracking-[15px] tracking-[10px]  text-[30px] "
+          className="flex justify-center pt-10 items-center uppercase text-[#4b5563] md:tracking-[15px] tracking-[10px]  text-[30px] "
         >
           Resume
         </h1>
         <div className="shadow-md rounded-lg flex-col p-8">
           <HeaderSecton />
           <Eduation />
-          {/* <ProjectSection /> */}
           <Experience />
           <Skills
             n1="JavaScript"

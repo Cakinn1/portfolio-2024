@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Aos from "aos";
-import Project from "../components/Project";
+import Project from "../archive/Project";
 import { extraProjectData } from "../lib/contants";
 
 export default function ExtraProjects() {

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Project from "../components/Project";
+import Project from "../archive/Project";
 import { projectData } from "../lib/contants";
 import AOS from "aos";
 import { FaArrowRight } from "react-icons/fa";
