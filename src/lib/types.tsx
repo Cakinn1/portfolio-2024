@@ -32,6 +32,7 @@ export interface Stack {
 //  projects
 
 
+
 export interface ProjectProps {
   github: string;
   vercel: string;
@@ -39,6 +40,7 @@ export interface ProjectProps {
     title?: string
     mainPara?: string
   }
+  languages?: string[]
   image: string;
   Application: string
   id: number 

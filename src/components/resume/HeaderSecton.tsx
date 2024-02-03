@@ -36,8 +36,8 @@ export default function HeaderSecton() {
     >
       <figure>
         <img
-          className="w-[166px] h-[166px] rounded-full"
-          src="/assets/1.png"
+          className="w-[166px] object-cover h-[166px] rounded-full"
+          src="/assets/landing_picture.png"
           alt=""
         />
       </figure>

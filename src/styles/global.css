@@ -24,9 +24,10 @@
   position: fixed;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  width: 50px;
+  width: 20px;
   border: 2px #f70042 solid;
-  height: 50px;
+  height: 20px;
+  background-color: #f70042;
   border-radius: 50%;
   box-shadow: 0px 0px 10px 2px #f70042;
 }
@@ -154,4 +155,61 @@ RESUME
     transform: translateX(-100%);
     opacity: 0;
   }
+}
+
+body {
+  cursor: none;
+}
+
+a {
+  cursor: none;
+}
+
+.shadow__nav {
+  display: flex;
+  z-index: 40;
+  position: fixed;
+  top: 1.235em;
+  border-radius: 38px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  height: 51px;
+  padding: 4px 8px;
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+}
+
+.shadow {
+  box-shadow: 0px 0px 14px 0 #f70042;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.about__color {
+  background: linear-gradient(
+    300deg,
+    #ffee07,
+    #ff2b6a,
+    #ab4bff,
+    #5ca2ff,
+    #df1700
+  );
+  background-size: 360% 360%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 30s ease infinite;
+}
+
+.overflow {
+  overflow: hidden;
 }

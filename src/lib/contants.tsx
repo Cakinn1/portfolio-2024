@@ -115,12 +115,13 @@ export const projectData: ProjectProps[] = [
     id: 0,
     github: "https://github.com/Cakinn1/Anthony-internship",
     vercel: "https://anthony-internship.vercel.app/",
-    image: "/assets/project-images/ultra.png",
+    image: "ultraverse.png",
     info: {
       title: "Ultraverse",
       mainPara:
         "Ultraverse is my internship project built with React.js, Tailwind & Axios. During this internship i learnt how to create detail pull request, read documentation and explain why i programmed a feature.",
     },
+    languages: ["/assets/icons/react.webp", "/assets/icons/tailwindcss.webp"],
     video: "/assets/images/ultraverse.mp4",
     skillsAndDeliverables: [
       "React.js",
@@ -133,21 +134,27 @@ export const projectData: ProjectProps[] = [
       "Responsive Design",
       "Version Control",
     ],
-    Application: "NFT Marketplace",
-    onClickImage: "/assets/nft.png"
+    Application: "NFT Marketplace Internship",
+    onClickImage: "/assets/nft.png",
   },
   {
     id: 1,
+    languages: [
+      "/assets/icons/nextjs.webp",
+      "/assets/icons/tailwindcss.webp",
+      "/assets/icons/redux.webp",
+      "/assets/icons/firebase.webp",
+    ],
 
     github: "https://github.com/Cakinn1/Busy-Bee",
     vercel: "https://busy-bee-opal.vercel.app/",
-    image: "/assets/project-images/twitter.png",
+    image: "/busy__bee.png",
     info: {
       mainPara:
         "Busy Bee is a social media web application I built to practise Next.js, Tailwind, Redux and Firebase. Features include CRUD functionality, posts, user authentication, likes, comments and server-side rendering",
       title: "Busy Bee",
     },
-    Application: "Busy Bee",
+    Application: "Social Media App",
     video: "/assets/images/busybee.mp4",
     skillsAndDeliverables: [
       "Next.js",
@@ -169,13 +176,46 @@ export const projectData: ProjectProps[] = [
 
     github: "https://github.com/Cakinn1/Ecom-App-lib",
     vercel: "https://ecom-app-lib.vercel.app/",
-    image: "/assets/project-images/lib.png",
+    image: "/library.png",
+    languages: ["/assets/icons/react.webp"],
     info: {
       mainPara:
         "Library is a E-commerece site i developed to further knowledge on React.js & UI/UX Deisgn. The site features stunning and responsive UI, skeleton loading states & cart functionalities.",
       title: "Library",
     },
-    Application: "E-Commerece Site",
+    Application: "E-Commerece Store",
+    video: "/assets/images/lib.mp4",
+    skillsAndDeliverables: [
+      "Next.js",
+      "Redux",
+      "Tailwind",
+      "Firebase",
+      "Vercel",
+      "Dark Mode",
+      "Light Mode",
+      "Responsive Design",
+      "Authentication",
+      "CRUD functionality",
+      "Version Control",
+    ],
+  },
+  {
+    id: 3,
+    github: "https://github.com/Cakinn1/netflix-clone",
+    vercel: "https://netflix-clone-clone.vercel.app/login",
+    image: "/netflix.png",
+    info: {
+      mainPara:
+        "Library is a E-commerece site i developed to further knowledge on React.js & UI/UX Deisgn. The site features stunning and responsive UI, skeleton loading states & cart functionalities.",
+      title: "Netflix Clone",
+    },
+    Application: "Movie Browsing App",
+    languages: [
+      "/assets/icons/nextjs.webp",
+      "/assets/icons/tailwindcss.webp",
+      "/assets/icons/typescript.webp",
+      "/assets/icons/firebase.webp",
+    ],
     video: "/assets/images/lib.mp4",
     skillsAndDeliverables: [
       "Next.js",

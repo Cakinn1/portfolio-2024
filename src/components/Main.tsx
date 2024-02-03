@@ -1,19 +1,21 @@
 import Landing from "../pages/Landing";
-import Landing2 from "../pages/Landing2";
 import TechStack from "../pages/TechStack";
 import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
-import Nav from "../pages/Nav";
+import Nav from "../archive/Nav";
 import Resume from "../pages/Resume";
+import About from "../pages/About";
+import CurrentProjects from "./projects/CurrentProjects";
 
 export default function Main() {
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
       <Landing />
-      <Landing2 />
+      <About />
       <TechStack />
-      <Projects />
+      <CurrentProjects />
+      {/* <Projects /> */}
       <Resume />
       <Contact />
     </>

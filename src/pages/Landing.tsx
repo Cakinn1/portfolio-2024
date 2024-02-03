@@ -12,7 +12,7 @@ export default function Landing() {
       <a
         href={`${value === "resume" ? `${link}` : `#${link}`}`}
         target={`${value === "resume" ? "_blank" : ""}`}
-        className="border hover:text-[#ffa76066] cursor-pointer duration-300 hover:border-[#ffa76066] rounded-full text-[#6b7280] md:text-[12px] text-[11px] p-2 tracking-wider border-opacity-40 border-[#6b7280] md:px-6 md:py-2 uppercase"
+        className="border hover:text-[#ffa76066]  duration-300 hover:border-[#ffa76066] rounded-full text-[#6b7280] md:text-[12px] text-[11px] p-2 tracking-wider border-opacity-40 border-[#6b7280] md:px-6 md:py-2 uppercase"
       >
         {value}
       </a>
@@ -21,14 +21,14 @@ export default function Landing() {
 
   return (
     <section
-      style={{ height: "calc(100vh - 110px)" }}
+      style={{ height: "calc(100vh - 0px)" }}
       className="text-white text-center mx-auto max-w-[1280px] p-10 w-full flex justify-center items-center"
     >
       <div className="space-y-8 mb-[90px] w-[800px/] mx-auto">
         <figure className="flex justify-center items-center">
           <img
             src="/assets/landing_picture.png"
-            className="rounded-full object-right-top object-cover h-[160px] w-[160px]"
+            className="rounded-full object-right-top object-cover h-[200px] w-[200px]"
             alt=""
           />
         </figure>
@@ -38,19 +38,29 @@ export default function Landing() {
           </h1>
           <h1 className="md:text-4xl font-bold ">
             <TypeWriter
+              options={{
+                loop: true, // Set loop to true to restart the animation
+              }}
               onInit={(typewriter) => {
-                typewriter
-                  .typeString(" ")
-                  .pauseFor(3000)
-                  .deleteAll()
-                  .typeString("Hi, I'm Anthony Cakin")
-                  .pauseFor(2000)
-                  .deleteAll()
-                  .typeString("A Passionate Frontend Developer")
-                  .pauseFor(2000)
-                  .deleteAll()
-                  .typeString("A Problem Solver")
-                  .start();
+                function startTyping() {
+                  typewriter
+                    .typeString(" ")
+                    .pauseFor(3000)
+                    .deleteAll()
+                    .typeString("Hi, I'm Anthony Cakin")
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .typeString("A Passionate Frontend Developer")
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .typeString("A Problem Solver")
+                    .pauseFor(2000)
+                    .start();
+                }
+                startTyping();
+                return () => {
+                  typewriter.stop();
+                };
               }}
             />
           </h1>

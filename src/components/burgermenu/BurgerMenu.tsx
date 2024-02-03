@@ -2,9 +2,11 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import Modal from "./Modal";
 import { useEffect, useState } from "react";
 
-interface BurgerMenuProps {}
+interface BurgerMenuProps {
+}
 export default function BurgerMenu(props: BurgerMenuProps) {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
   const [closeMenuAnimation, setCloseMenuAnimation] = useState<boolean>(false);
 
   function handleModal() {
@@ -33,10 +35,10 @@ export default function BurgerMenu(props: BurgerMenuProps) {
   }, [isModalOpen]);
 
   return (
-    <div className="fixed  left-8 top-8 z-10">
+    <div className="fixed  left-2 top-2 md:left-4 md:top-4 z-10">
       <GiHamburgerMenu
         onClick={() => handleModal()}
-        className="text-[#f70042] text-4xl cursor-pointer hover:scale-110 active:scale-90 duration-300"
+        className="text-[#f70042] text-4xl hover:scale-110 active:scale-90 duration-300"
       />
       {isModalOpen && (
         <Modal

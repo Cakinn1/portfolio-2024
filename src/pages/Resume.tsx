@@ -6,11 +6,15 @@ import ProjectSection from "../components/resume/ProjectSection";
 import Experience from "../components/resume/Experience";
 import Skills from "../components/resume/Skills";
 
+
 export default function Resume() {
     useEffect(() => {
       window.scroll({ top: 0 });
       Aos.init();
     }, []);
+
+
+
 
   return (
     <section id="resume" className="bg-white font-mono  mx-auto p-5 flex">

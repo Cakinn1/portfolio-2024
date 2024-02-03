@@ -17,7 +17,7 @@ export default function TechStack() {
         <img
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          className="w-[100px] hover:scale-90   cursor-pointer duration-300 h-[100px] object-contain"
+          className="w-[100px] hover:scale-90    duration-300 h-[100px] object-contain"
           src={`/assets/icons/${image}`}
           alt=""
         />

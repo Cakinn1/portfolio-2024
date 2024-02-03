@@ -7,8 +7,9 @@ import ExtraProjects from "./ExtraProjects";
 import SingleProject from "./SingleProject";
 import Mail from "../components/mail/Mail";
 import BurgerMenu from "../components/burgermenu/BurgerMenu";
-import Modal from "../components/burgermenu/Modal";
-
+import BottomRightText from "../components/darkmode/BottomRightText";
+import { FaMoon, FaSun } from "react-icons/fa";
+import Menu from "../components/menu/Menu";
 export default function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
@@ -38,11 +39,21 @@ export default function App() {
     };
   }, []);
 
+  /*
+
+  * add redux and disable mail on burgermenu
+
+*/
+
   return (
     <div className="scroll-smooth relative overflow-x-hidden">
-      <div className="cursor-ring z-50"></div>
+      <div className="cursor-ring z-50 "></div>
       <BurgerMenu />
+      {/* <BottomRightText text="Turn off lights" isDarkModeSwitcher={true} icon={<FaSun />} /> */}
+      {/* <BottomRightText text="Turn off lights" icon={<FaSun />} /> */}
+
       <Mail />
+      {/* <Menu /> */}
       <OnLoad isLoading={isLoading} />
       <Background />
       <Router>
