@@ -110,7 +110,7 @@ export default function Contact() {
             ></button>
           ) : success ? (
             <button
-              className="border cursor-none  w-full border-green-500 p-3 rounded-2xl"
+              className=" cursor-none  w-full bg-green-500 p-3 rounded-2xl"
               type="submit"
             >
               Thank you!
