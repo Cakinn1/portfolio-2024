@@ -35,7 +35,7 @@ export default function BurgerMenu(props: BurgerMenuProps) {
   }, [isModalOpen]);
 
   return (
-    <div className="fixed  left-2 top-2 md:left-4 md:top-4 z-10">
+    <div className="fixed left-2 top-2 md:left-4 md:top-4 z-10">
       <GiHamburgerMenu
         onClick={() => handleModal()}
         className="text-[#f70042] text-4xl hover:scale-110 active:scale-90 duration-300"
