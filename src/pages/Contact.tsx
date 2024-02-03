@@ -24,9 +24,11 @@ export default function Contact() {
     }));
   };
 
+
   const sendEmail = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setLoading(true);
+    
 
     try {
       await emailjs.sendForm(
