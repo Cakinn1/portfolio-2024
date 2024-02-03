@@ -121,7 +121,7 @@ export const projectData: ProjectProps[] = [
       mainPara:
         "Ultraverse is my internship project built with React.js, Tailwind & Axios. During this internship i learnt how to create detail pull request, read documentation and explain why i programmed a feature.",
     },
-    languages: ["/assets/icons/react.webp", "/assets/icons/tailwindcss.webp"],
+    languages: ["React.js", "TailwindCss"],
     video: "/assets/images/ultraverse.mp4",
     skillsAndDeliverables: [
       "React.js",
@@ -139,12 +139,7 @@ export const projectData: ProjectProps[] = [
   },
   {
     id: 1,
-    languages: [
-      "/assets/icons/nextjs.webp",
-      "/assets/icons/tailwindcss.webp",
-      "/assets/icons/redux.webp",
-      "/assets/icons/firebase.webp",
-    ],
+    languages: ["Next.js", "TailwindCss", "Redux-Toolkit", "Firebase"],
 
     github: "https://github.com/Cakinn1/Busy-Bee",
     vercel: "https://busy-bee-opal.vercel.app/",
@@ -177,7 +172,7 @@ export const projectData: ProjectProps[] = [
     github: "https://github.com/Cakinn1/Ecom-App-lib",
     vercel: "https://ecom-app-lib.vercel.app/",
     image: "/library.png",
-    languages: ["/assets/icons/react.webp"],
+    languages: ["React.js"],
     info: {
       mainPara:
         "Library is a E-commerece site i developed to further knowledge on React.js & UI/UX Deisgn. The site features stunning and responsive UI, skeleton loading states & cart functionalities.",
@@ -210,12 +205,7 @@ export const projectData: ProjectProps[] = [
       title: "Netflix Clone",
     },
     Application: "Movie Browsing App",
-    languages: [
-      "/assets/icons/nextjs.webp",
-      "/assets/icons/tailwindcss.webp",
-      "/assets/icons/typescript.webp",
-      "/assets/icons/firebase.webp",
-    ],
+    languages: ["TailwindCss", "Next.js", "TypeScript", "Firebase"],
     video: "/assets/images/lib.mp4",
     skillsAndDeliverables: [
       "Next.js",
