@@ -6,19 +6,15 @@ import ProjectSection from "../components/resume/ProjectSection";
 import Experience from "../components/resume/Experience";
 import Skills from "../components/resume/Skills";
 
-
 export default function Resume() {
-    useEffect(() => {
-      window.scroll({ top: 0 });
-      Aos.init();
-    }, []);
-
-
-
+  // useEffect(() => {
+  //   window.scroll({ top: 0 });
+  //   Aos.init();
+  // }, []);
 
   return (
-    <section id="resume" className="bg-white font-mono  mx-auto p-5 flex">
-      <div className="p-5 mx-auto max-w-[960px] space-y-12 w-full ">
+    <section id="resume" className="bg-white font-mono  mx-auto lg:p-5 flex">
+      <div className="   lg:p-5 mx-auto max-w-[960px] space-y-12 w-full ">
         <h1
           data-aos="fade-up"
           data-aos-duration="1000"

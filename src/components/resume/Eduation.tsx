@@ -13,7 +13,7 @@ export default function Eduation() {
     para: string;
   }) {
     return (
-      <div className="flex flex-1 gap-x-12  justify-between">
+      <div className="flex flex-1 gap-x-12 flex-col lg:flex-row   justify-between">
         <div>
           <h1 className="font-bold text-[14px]">{title}</h1>
           <p className="text-sm">{para}</p>
@@ -33,10 +33,10 @@ export default function Eduation() {
     <div
       data-aos="fade-up"
       data-aos-duration="1000"
-      className="py-8 flex-1 gap-x-12 flex border-y my-8"
+      className="py-8 flex-1 gap-x-12 flex-col lg:flex-row flex border-y my-8"
     >
       <SectionHeader text="Education" />
-      <div className="flex flex-1 space-y-6 flex-col">
+      <div className="flex flex-1 space-y-6 flex-col mt-6 lg:mt-0">
         <RenderEducation
           title="Frontend Developer Bootcamp"
           para="Frontend Simplified"

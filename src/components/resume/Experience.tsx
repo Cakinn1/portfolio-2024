@@ -20,7 +20,7 @@ export default function Experience() {
   }) {
     return (
       <div className="space-y-4">
-        <div className="flex flex-1 justify-between ">
+        <div className="flex flex-1 flex-col lg:flex-row  justify-between ">
           <div>
             <h1 className="font-bold text-[14px]">{title}</h1>
             <h2 className="text-sm">{para}</h2>
@@ -37,22 +37,18 @@ export default function Experience() {
     );
   }
 
-
-useEffect(() => {
-Aos.init()
-}, [])
-
-
-
-
-
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
-    <div className="pb-8 flex-1 gap-x-12 flex border-b my-8"
-    data-aos="fade-up"
-    data-aos-duration="1000">
+    <div
+      className="pb-8 flex-1 gap-x-12 flex flex-col lg:flex-row border-b my-8"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
       <SectionHeader text="Experience" />
-      <div className="flex flex-1 space-y-14 flex-col">
+      <div className="flex flex-1 space-y-14 mt-6 lg:mt-0 flex-col">
         <Section
           para3="Leveraged Git and pull requests to collaborate effectively with team members, ensuring seamless code integration. "
           para2="Integrated API data using Axios, implementing skeleton loading states, and dynamic routing for a seamless user experience."
@@ -77,7 +73,6 @@ Aos.init()
           para="Technical Support (Frontend)"
           title="Frontend Simplified"
         />
-        
       </div>
     </div>
   );

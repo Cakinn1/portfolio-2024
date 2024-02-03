@@ -30,16 +30,16 @@ export default function Skills(props: SkillsProps) {
       data-aos-duration="1000"
       className={` ${
         isTrue ? "border-b gap-x-11" : " gap-x-6"
-      } mt-8 flex  flex-1 pb-8`}
+      } mt-8 flex  flex-col lg:flex-row flex-1 pb-8`}
     >
       <div>
-        <h1 className="font-bold text-lg">{title}</h1>
+        <h1 className="font-bold text-lg mb-4 lg:mb-0">{title}</h1>
       </div>
-      <div className="flex">
+      <div className="flex flex-col lg:flex-row">
         <ul
           className={`list-disc space-y-1 text-[13px] ${
-            isTrue ? "mr-[300px]" : "mr-[130px]"
-          }`}
+            isTrue ? " lg:mr-[300px] mr-[300px]" : "lg:mr-[130px] mr-[130px]"
+          } mr-0 `}
         >
           <li>{n1}</li>
           <li>{n2}</li>
