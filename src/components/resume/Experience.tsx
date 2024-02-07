@@ -53,7 +53,7 @@ export default function Experience() {
           para3="Leveraged Git and pull requests to collaborate effectively with team members, ensuring seamless code integration. "
           para2="Integrated API data using Axios, implementing skeleton loading states, and dynamic routing for a seamless user experience."
           para1="Revamped a static React.js single-page application into an engaging user interface with animations, transitions, and carousels. "
-          date="July 2020 - November 2022"
+          date="July 2022 – November 2022"
           para="Frontend Developer Internship"
           title="Frontend Simplified"
         />

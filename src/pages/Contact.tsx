@@ -5,6 +5,7 @@ export default function Contact() {
   useEffect(() => {
     AOS.init();
   }, []);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
