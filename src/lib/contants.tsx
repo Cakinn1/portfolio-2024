@@ -201,7 +201,7 @@ export const projectData: ProjectProps[] = [
     image: "/netflix.png",
     info: {
       mainPara:
-        "Library is a E-commerece site i developed to further knowledge on React.js & UI/UX Deisgn. The site features stunning and responsive UI, skeleton loading states & cart functionalities.",
+        "In this project, I aimed to replicate the renowned Netflix application using Next.js and TypeScript, showcasing my proficiency in front-end development. The Netflix Clone serves as a testament to my dedication to mastering UI replication and enhancing my skills in web development.",
       title: "Netflix Clone",
     },
     Application: "Movie Browsing App",
