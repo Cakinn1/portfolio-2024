@@ -39,6 +39,11 @@ export default function CurrentProjects() {
             />
           ))}
         </div>
+        <div data-aos="fade-up" data-aos-duration="400">
+          <a href="https://github.com/Cakinn1?tab=repositories" target="_blank" className="flex text-blue-500 hover:scale-105 active:scale-90 duration-300  md:tracking-[15px] tracking-[10px]  text-[30px] justify-center items-center">
+            Show More
+          </a>
+        </div>
       </div>
       {isNextflixOpened && (
         <div className="fixed top-1/2 w-full h-full flex flex-1 flex-col justify-center items-center bg-black bg-opacity-40 z-3 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
