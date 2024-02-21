@@ -21,10 +21,10 @@ export default function HeaderSecton() {
       <a
         target={`${text === "Email" && ""}${text === "LinkedIn" && "_blank"} `}
         href={link}
-        className="mr-[120px] gap-x-2 lg:gap-x-1 flex items-center"
+        className="mr-[120px] hover:scale-110 duration-300 active:scale-90 gap-x-2 cursor-none lg:gap-x-1 flex items-center"
       >
         {icon}
-        <h1 className="cursor-pointer">{text}</h1>
+        <h1>{text}</h1>
       </a>
     );
   }
@@ -44,13 +44,13 @@ export default function HeaderSecton() {
       <div className="flex flex-1 flex-col space-y-2">
         <div>
           <h1 className="font-bold text-3xl">Anthony Cakin</h1>
-          <h2 className="text-lg">Software Engineer</h2>
+          <h2 className="text-lg">Frontend Developer</h2>
         </div>
         <div className="flex justify-between flex-col lg:flex-row lg:items-center">
           <RenderInfo
             link="https://docs.google.com/document/d/1IQXaoh5fmVeK0vIEM0W1Z2DqRLPROmcb/edit"
             text="View Resume"
-            icon={<PiDownloadSimpleBold className="cursor-pointer" />}
+            icon={<PiDownloadSimpleBold className="" />}
           />
           <RenderInfo
             link="mailto:anthonycakin64@gmail.com"
@@ -64,7 +64,7 @@ export default function HeaderSecton() {
           />
         </div>
         <p className="text-[13px]">
-          A highly motivated software engineer prepared to utilise exceptional
+          A highly motivated frontend developer prepared to utilise exceptional
           software, problem-solving and communication skills to further my
           programming passion as a web developer.
         </p>

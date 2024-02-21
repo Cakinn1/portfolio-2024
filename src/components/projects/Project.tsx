@@ -3,48 +3,8 @@ import { ProjectProps } from "../../lib/types";
 import Aos from "aos";
 import { FaGithub, FaLink } from "react-icons/fa";
 import Languages from "./Languages";
+import ItemLinks from "./ItemLinks";
 
-const ItemLinks = (props: {
-  link: string;
-  icon: ReactElement;
-  title: string;
-  isNextflix?: boolean;
-  setIsNextflixOpened?: (value: boolean) => void;
-  isNextflixOpened?: boolean;
-}) => {
-  const {
-    icon,
-    link,
-    title,
-    isNextflix,
-    setIsNextflixOpened,
-    isNextflixOpened,
-  } = props;
-  return (
-    <>
-      {isNextflix ? (
-        <div
-          onClick={() =>
-            setIsNextflixOpened && setIsNextflixOpened(!isNextflixOpened)
-          }
-          className="flex text-[#] items-center gap-x-3 w-fit hover:scale-110 active:scale-90 duration-300"
-        >
-          {icon}
-          <h1>{title}</h1>
-        </div>
-      ) : (
-        <a
-          className="flex text-[#] items-center gap-x-3 w-fit hover:scale-110 active:scale-90 duration-300"
-          href={link}
-          target="_blank"
-        >
-          {icon}
-          <h1>{title}</h1>
-        </a>
-      )}
-    </>
-  );
-};
 
 interface ProjectData extends ProjectProps {
   lastIndex: number;

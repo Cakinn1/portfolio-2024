@@ -3,13 +3,8 @@ import OnLoad from "./OnLoad";
 import { Background } from "../components/particles/Background";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Main from "./Main";
-import ExtraProjects from "./ExtraProjects";
-import SingleProject from "./SingleProject";
 import Mail from "../components/mail/Mail";
 import BurgerMenu from "../components/burgermenu/BurgerMenu";
-import BottomRightText from "../archive/darkmode/BottomRightText";
-import { FaMoon, FaSun } from "react-icons/fa";
-import Menu from "../archive/menu1/Menu";
 export default function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 

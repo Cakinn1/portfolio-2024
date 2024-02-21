@@ -5,6 +5,7 @@ import Eduation from "../components/resume/Eduation";
 import ProjectSection from "../components/resume/ProjectSection";
 import Experience from "../components/resume/Experience";
 import Skills from "../components/resume/Skills";
+import OpenSource from "../components/resume/OpenSource";
 
 export default function Resume() {
   // useEffect(() => {
@@ -25,6 +26,7 @@ export default function Resume() {
         <div className="shadow-md rounded-lg flex-col p-8">
           <HeaderSecton />
           <Eduation />
+          <OpenSource />
           <Experience />
           <Skills
             n1="JavaScript"
