@@ -62,7 +62,7 @@ export default function OpenSource() {
           <ItemLinks
             isOpenSource={true}
             icon={<SiVorondesign className="text-sm" />}
-            link={githubLink}
+            link={designLink}
             title="Design"
           />
         </div>
@@ -86,7 +86,7 @@ export default function OpenSource() {
         <Section
           liveLink="https://v47-tier2-team-10-mu.vercel.app/"
           designLink="https://excalidraw.com/#room=06825c5c05b931c64b46,RoxCHMMEJqc6bXac1fFLPA"
-          githubLink="https://github.com/Cakinn1/v47-tier2-team-10"
+          githubLink="https://github.com/chingu-voyages/v47-tier2-team-10"
           title="Chingu - Voyage 47"
           date="January 2024 - February 2024"
           para="Lead Frontend Developer"
