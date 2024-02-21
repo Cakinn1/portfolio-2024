@@ -34,7 +34,7 @@ export default function Landing() {
         </figure>
         <div data-aos="fade-down" data-aos-duration="1000" className="">
           <h1 className="text-[#6b7280] text-[12px] md:text-[16px] pb-2 md:tracking-[15px] tracking-[10px]    uppercase">
-            Software Engineer
+            Frontend Developer
           </h1>
           <h1 className="md:text-4xl font-bold ">
             <TypeWriter
