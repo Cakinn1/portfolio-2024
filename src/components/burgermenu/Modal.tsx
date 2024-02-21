@@ -1,15 +1,13 @@
-import React from "react";
-
+import React, { useContext } from "react";
 import { FaXmark } from "react-icons/fa6";
+import { burgerMenuContext } from "../../context/BurgerMenuContext";
 interface ModalProps {
-  setIsModalOpen: (value: boolean) => void;
-  isModalOpen: boolean;
   handleModal: () => void;
   closeMenuAnimation: boolean;
 }
 export default function Modal(props: ModalProps) {
-  const { setIsModalOpen, isModalOpen, handleModal, closeMenuAnimation } =
-    props;
+  const { handleModal, closeMenuAnimation } = props;
+  const { isModalOpen, setIsModalOpen } = useContext(burgerMenuContext);
 
   function RenderNav({ text }: { text: string }) {
     return (

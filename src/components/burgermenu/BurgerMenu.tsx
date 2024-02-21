@@ -1,12 +1,11 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 import Modal from "./Modal";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import { burgerMenuContext } from "../../context/BurgerMenuContext";
 
-interface BurgerMenuProps {
-}
+interface BurgerMenuProps {}
 export default function BurgerMenu(props: BurgerMenuProps) {
-  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-
+  const { isModalOpen, setIsModalOpen } = useContext(burgerMenuContext);
   const [closeMenuAnimation, setCloseMenuAnimation] = useState<boolean>(false);
 
   function handleModal() {
@@ -44,10 +43,9 @@ export default function BurgerMenu(props: BurgerMenuProps) {
         <Modal
           closeMenuAnimation={closeMenuAnimation}
           handleModal={handleModal}
-          isModalOpen={isModalOpen}
-          setIsModalOpen={setIsModalOpen}
         />
       )}
     </div>
   );
 }
+//
