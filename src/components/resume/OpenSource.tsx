@@ -4,6 +4,7 @@ import SectionHeader from "./SectionHeader";
 import ItemLinks from "../projects/ItemLinks";
 import { FaGithub, FaLink } from "react-icons/fa";
 import { SiVorondesign } from "react-icons/si";
+import { FaFilePdf } from "react-icons/fa";
 export default function OpenSource() {
   useEffect(() => {
     Aos.init();
@@ -65,11 +66,16 @@ export default function OpenSource() {
             link={designLink}
             title="Design"
           />
+          <ItemLinks
+            isOpenSource={true}
+            icon={<FaFilePdf className="text-sm" />}
+            link={'chingu_cert.png'}
+            title="Certification"
+          />
         </div>
         <ul className="space-y-2 text-[13px] list-disc">
           <li>{para1}</li>
           <li>{para2}</li>
-          {/* <li>{para3}</li> */}
         </ul>
       </div>
     );
