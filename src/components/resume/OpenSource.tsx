@@ -25,11 +25,11 @@ export default function OpenSource() {
     para: string;
     date: string;
     para1: string;
-    para2: string;
-    para3: string;
-    designLink: string;
-    githubLink: string;
-    liveLink: string;
+    para2?: string;
+    para3?: string;
+    designLink?: string;
+    githubLink?: string;
+    liveLink?: string;
   }) {
     return (
       <div className="space-y-4">
@@ -47,36 +47,38 @@ export default function OpenSource() {
           </div>
           <h2 className="text-sm">{date}</h2>
         </div>
-        <div className="flex flex-col mt-4">
-          <ItemLinks
-            isOpenSource={true}
-            icon={<FaGithub className="text-sm" />}
-            link={githubLink}
-            title="Code"
-          />
-          <ItemLinks
-            isOpenSource={true}
-            icon={<FaLink className="text-sm" />}
-            link={liveLink}
-            title="Live"
-          />
-          <ItemLinks
-            isOpenSource={true}
-            icon={<SiVorondesign className="text-sm" />}
-            link={designLink}
-            title="Design"
-          />
-          <ItemLinks
-            isOpenSource={true}
-            icon={<FaFilePdf className="text-sm" />}
-            link={"chingu_cert.png"}
-            title="Certification"
-          />
-        </div>
+        {designLink && (
+          <div className="flex flex-col mt-4">
+            <ItemLinks
+              isOpenSource={true}
+              icon={<FaGithub className="text-sm" />}
+              link={githubLink}
+              title="Code"
+            />
+            <ItemLinks
+              isOpenSource={true}
+              icon={<FaLink className="text-sm" />}
+              link={liveLink}
+              title="Live"
+            />
+            <ItemLinks
+              isOpenSource={true}
+              icon={<SiVorondesign className="text-sm" />}
+              link={designLink}
+              title="Design"
+            />
+            <ItemLinks
+              isOpenSource={true}
+              icon={<FaFilePdf className="text-sm" />}
+              link={"chingu_cert.png"}
+              title="Certification"
+            />
+          </div>
+        )}
         <ul className="space-y-2 text-[13px] list-disc">
           <li>{para1}</li>
-          <li>{para2}</li>
-          <li>{para3}</li>
+          {para2 && <li>{para2}</li>}
+          {para3 && <li>{para3}</li>}
         </ul>
       </div>
     );
@@ -98,8 +100,14 @@ export default function OpenSource() {
           date="January 2024 - February 2024"
           para="Lead Frontend Developer"
           para1={`Led a team of 4 developers during daily standup, design, and coding meetings for a 6-week intensive software development program, implementing scrum methodologies to drive effective communication and on-time project delivery.`}
-          para2="Developed a user-friendly task management application using ReactJS, Tailwind CSS, and Firebase, successfully implementing all MVP requirements: creating, assigning, updating, and deleting tasks, user authentication and data parsing/visualization with category, activity, and individual task sorting"
+          para2="Developed a user-friendly task management application using ReactJS, TypeScript, Tailwind CSS, and Firebase, successfully implementing all MVP requirements: creating, assigning, updating, and deleting tasks, user authentication and data parsing/visualization with category, activity, and individual task sorting"
           para3="My biggest achievement during this program was leading the project's migration from ReactJS/JavaScript to ReactJS/TypeScript. This involved not only introducing TypeScript to the team and guiding them through its fundamentals, but also refactoring the entire codebase structure (folders/files) for optimal organization and maintainability with TypeScript in mind. I ensured everyone understood the benefits of TypeScript for code quality, maintainability, and scalability, resulting in a successfully migrated codebase."
+        />
+        <Section
+          title="Chingu - Voyage 48"
+          date="March 2024 - May 2024"
+          para="Frontend Developer"
+          para1="Thrilled to build on the knowledge I gained from my last Chingu voyage by embarking on another one! This time, I'm joining Voyage 48 as a Frontend Developer. This Voyage will be completed on May 6th."
         />
       </div>
     </div>

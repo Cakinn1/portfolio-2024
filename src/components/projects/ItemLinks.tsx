@@ -1,8 +1,8 @@
 import React from "react";
 
 interface ItemLinksProps {
-  link: string;
-  icon: React.ReactElement;
+  link?: string;
+  icon?: React.ReactElement;
   title: string;
   isNextflix?: boolean;
   setIsNextflixOpened?: (value: boolean) => void;
