@@ -36,12 +36,6 @@ export default function App() {
     };
   }, []);
 
-  /*
-
-  * add redux and disable mail on burgermenu
-
-*/
-
   return (
     <div className="scroll-smooth relative overflow-x-hidden">
       <div className="cursor-ring z-50 "></div>

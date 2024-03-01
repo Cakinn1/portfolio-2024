@@ -69,13 +69,14 @@ export default function OpenSource() {
           <ItemLinks
             isOpenSource={true}
             icon={<FaFilePdf className="text-sm" />}
-            link={'chingu_cert.png'}
+            link={"chingu_cert.png"}
             title="Certification"
           />
         </div>
         <ul className="space-y-2 text-[13px] list-disc">
           <li>{para1}</li>
           <li>{para2}</li>
+          <li>{para3}</li>
         </ul>
       </div>
     );
@@ -98,7 +99,7 @@ export default function OpenSource() {
           para="Lead Frontend Developer"
           para1={`Led a team of 4 developers during daily standup, design, and coding meetings for a 6-week intensive software development program, implementing scrum methodologies to drive effective communication and on-time project delivery.`}
           para2="Developed a user-friendly task management application using ReactJS, Tailwind CSS, and Firebase, successfully implementing all MVP requirements: creating, assigning, updating, and deleting tasks, user authentication and data parsing/visualization with category, activity, and individual task sorting"
-          para3="3"
+          para3="My biggest achievement during this program was leading the project's migration from ReactJS/JavaScript to ReactJS/TypeScript. This involved not only introducing TypeScript to the team and guiding them through its fundamentals, but also refactoring the entire codebase structure (folders/files) for optimal organization and maintainability with TypeScript in mind. I ensured everyone understood the benefits of TypeScript for code quality, maintainability, and scalability, resulting in a successfully migrated codebase."
         />
       </div>
     </div>
