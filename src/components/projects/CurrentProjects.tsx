@@ -20,7 +20,7 @@ export default function CurrentProjects() {
   }, [isNextflixOpened]);
   return (
     <section id="projects" className="bg-[#f8f8f8] pb-10 min-h-screen ">
-      <div className="max-w-[1400px] space-y-20 mx-auto md:p-10">
+      <div className="max-w-[1100px] space-y-20 mx-auto md:p-10">
         <h1
           data-aos="fade-down"
           data-aos-duration="400"

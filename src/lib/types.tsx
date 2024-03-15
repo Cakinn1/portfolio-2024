@@ -42,6 +42,7 @@ export interface ProjectProps {
   }
   languages?: string[]
   image: string;
+  projectType: string
   Application: string
   id: number 
   skillsAndDeliverables?: string[]

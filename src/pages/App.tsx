@@ -10,12 +10,12 @@ import { Analytics } from "@vercel/analytics/react";
 export default function App() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setIsLoading(false);
-    }, 4000);
-    return () => clearInterval(timeoutId);
-  }, [isLoading]);
+  // useEffect(() => {
+  //   const timeoutId = setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 4000);
+  //   return () => clearInterval(timeoutId);
+  // }, [isLoading]);
 
   useEffect(() => {
     const handleMouseMove = (event: MouseEvent) => {
@@ -43,7 +43,7 @@ export default function App() {
       <BurgerMenuContext>
         <BurgerMenu />
         <Mail />
-        <OnLoad isLoading={isLoading} />
+        {/* <OnLoad isLoading={isLoading} /> */}
         <Background />
         <Router>
           <Routes>

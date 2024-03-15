@@ -4,8 +4,7 @@ import Aos from "aos";
 import { FaGithub, FaLink } from "react-icons/fa";
 import Languages from "./Languages";
 import ItemLinks from "./ItemLinks";
-
-
+import { FaExternalLinkAlt } from "react-icons/fa";
 interface ProjectData extends ProjectProps {
   lastIndex: number;
   isNextflixOpened: boolean;
@@ -24,58 +23,103 @@ export default function Project(props: ProjectData) {
     languages,
     isNextflixOpened,
     setIsNextflixOpened,
+    projectType,
   } = props;
+  const iconStyle = "duration-200 hover:scale-110 active:scale-90";
 
   useEffect(() => {
     Aos.init();
   }, []);
 
+
+  console.log([...Array(12).fill(0)])
+
+  const LeftImage = () => {
+    return (
+      <a
+        href={vercel}
+        target="_blank"
+        className="w-full md:w-[60%] cursor-none  group bg-opacity-35 mb-14 rounded-md md:rounded-3xl shadow-md  relative"
+      >
+        <img
+          src={image}
+          className={`lg:w-full cursor-none object-top  h-[500px] md:h-[340px]  project__shadow duration-200 rounded-md md:rounded-3xl object-cover`}
+          alt=""
+        />
+        <div className="absolute space-y-4 bg-gray-400 w-full top-0 h-full rounded-md md:hidden p-8 bg-opacity-80">
+          <div className="">
+            <h1 className="font-bold text-[16px] text-[#4b5563] ">
+              {projectType}
+            </h1>
+            <h2 className="font-extrabold text-[22px]">{Application}</h2>
+          </div>
+          <div className="flex text-sm gap-x-3 justify-end">
+            {languages?.map((language) => {
+              return <h1>{language}</h1>;
+            })}
+          </div>
+
+          <div>
+            {[...Array(12).map((item) => <div>d</div>)]}
+            {[...Array(12).map((item) => (<div>nice</div>))]}
+            {new Array(12).fill(0).map((_) => (<div>cool</div>))}
+          </div>
+          {/* 
+
+          <div className="flex justify-end gap-x-4 text-[20px]">
+            <a target="_blank" href={github}>
+              <FaGithub className={iconStyle} />
+            </a>
+            <a target="_blank" href={vercel}>
+              <FaExternalLinkAlt className={iconStyle} />
+            </a>
+          </div> */}
+        </div>
+        {/* <div className="absolute rounded-3xl top-0  group-hover:opacity-0 duration-300 h-full bg-green-500 opacity-35"></div> */}
+      </a>
+    );
+  };
+
+  const RightImage = () => {
+    return (
+      <div className="absolute top-[40px] justify-center hidden md:flex right-0 flex-col space-y-4  flex-1 ">
+        <div className="flex items-end flex-col">
+          <h1 className="font-bold text-[16px] text-[#4b5563]  text-center md:text-left">
+            {projectType}
+          </h1>
+          <h2 className="font-extrabold text-[22px]">{Application}</h2>
+        </div>
+
+        <div className="bg-[#f5f5f5]  shadow-md flex justify-center items-center text-center p-4 w-[500px] rounded-md">
+          <h1>{info?.mainPara}</h1>
+        </div>
+
+        <div className="flex text-sm gap-x-3 justify-end">
+          {languages?.map((language) => {
+            return <h1>{language}</h1>;
+          })}
+        </div>
+
+        <div className="flex justify-end gap-x-4 text-[20px]">
+          <a target="_blank" href={github}>
+            <FaGithub className={iconStyle} />
+          </a>
+          <a target="_blank" href={vercel}>
+            <FaExternalLinkAlt className={iconStyle} />
+          </a>
+        </div>
+      </div>
+    );
+  };
   return (
     <>
       <div
         data-aos="fade-up"
         data-aos-duration="1000"
-        className="relative group px-8 py-0 w-full lg:w-[47%] font-mono md:p-0"
+        className="relative  cursor-none flex group px-8 py-0 w-full md:p-0"
       >
-        <img
-          src={image}
-          className={`h-[400px] w-full object-top project__shadow duration-200 rounded-3xl md:active:scale-95 md:hover:scale-105  ${
-            id > 1 ? "" : "mb-10"
-          } object-cover mb-10 `}
-          alt=""
-        />
-        <div className="absolute group-hover:opacity-100 rounded-3xl opacity-0 backdrop-blur-sm    duration-300 h-0  group-hover:h-full w-full left-[50%] pb-10  -translate-x-1/2  bottom-0">
-          <div
-            className={`mx-8 h-full mb-8 ${
-              id === lastIndex ? "text-white" : "text-black"
-            } flex opacity-100 z-10 justify-center  flex-col space-y-4 rounded-3xl pb-10 p-8`}
-          >
-            <h1 className="font-bold text-[15px]">
-              {Application + " - " + info?.title}
-            </h1>
-            <div className="flex gap-x-4 flex-wrap">
-              {languages?.map((language) => (
-                <Languages logoUrl={language} key={language} />
-              ))}
-            </div>
-            <div className="text-sm md:text-14px">{info?.mainPara}</div>
-            <div className="space-y-2">
-              <ItemLinks
-                icon={<FaGithub className="text-lg" />}
-                link={github}
-                title="Code"
-              />
-              <ItemLinks
-                isNextflix={info?.title === "Netflix Clone"}
-                icon={<FaLink className="text-lg" />}
-                link={vercel}
-                setIsNextflixOpened={setIsNextflixOpened}
-                title="Live link"
-                isNextflixOpened={isNextflixOpened}
-              />
-            </div>
-          </div>
-        </div>
+        <LeftImage />
+        <RightImage />
       </div>
     </>
   );

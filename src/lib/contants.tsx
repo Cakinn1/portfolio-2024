@@ -134,7 +134,8 @@ export const projectData: ProjectProps[] = [
       "Responsive Design",
       "Version Control",
     ],
-    Application: "NFT Marketplace Internship",
+    Application: "NFT Marketplace",
+    projectType: "Internship Project",
     onClickImage: "/assets/nft.png",
   },
   {
@@ -149,7 +150,7 @@ export const projectData: ProjectProps[] = [
         "Busy Bee is a social media web application I built to practise Next.js, Tailwind, Redux and Firebase. Features include CRUD functionality, posts, user authentication, likes, comments and server-side rendering",
       title: "Busy Bee",
     },
-    Application: "Social Media App",
+    Application: "Social Media Clone",
     video: "/assets/images/busybee.mp4",
     skillsAndDeliverables: [
       "Next.js",
@@ -164,6 +165,7 @@ export const projectData: ProjectProps[] = [
       "CRUD functionality",
       "Version Control",
     ],
+    projectType: "Personal Project",
   },
 
   {
@@ -178,7 +180,7 @@ export const projectData: ProjectProps[] = [
         "Library is a E-commerece site i developed to further knowledge on React.js & UI/UX Deisgn. The site features stunning and responsive UI, skeleton loading states & cart functionalities.",
       title: "Library",
     },
-    Application: "E-Commerece Store",
+    Application: "E-Commerce Store",
     video: "/assets/images/lib.mp4",
     skillsAndDeliverables: [
       "Next.js",
@@ -193,6 +195,7 @@ export const projectData: ProjectProps[] = [
       "CRUD functionality",
       "Version Control",
     ],
+    projectType: "Personal Project",
   },
   {
     id: 3,
@@ -204,7 +207,7 @@ export const projectData: ProjectProps[] = [
         "In this project, I aimed to replicate the renowned Netflix application using Next.js and TypeScript, showcasing my proficiency in front-end development. The Netflix Clone serves as a testament to my dedication to mastering UI replication and enhancing my skills in web development.",
       title: "Netflix Clone",
     },
-    Application: "Movie Browsing App",
+    Application: "Netflix Clone",
     languages: ["TailwindCss", "Next.js", "TypeScript", "Firebase"],
     video: "/assets/images/lib.mp4",
     skillsAndDeliverables: [
@@ -220,6 +223,7 @@ export const projectData: ProjectProps[] = [
       "CRUD functionality",
       "Version Control",
     ],
+    projectType: "Personal Project",
   },
 ];
 
@@ -234,7 +238,7 @@ Extra Projects
 export const extraProjectData: ProjectProps[] = [
   {
     id: 3,
-
+    projectType: "nice",
     github: "https://github.com/Cakinn1/netflix-clone",
     vercel: "https://netflix-clone-clone.vercel.app/login",
     image: "/assets/extra-projects/netflix.png",
@@ -259,6 +263,7 @@ export const extraProjectData: ProjectProps[] = [
     },
     Application: "Search Engine Site",
     isFalse: true,
+    projectType: "Personal Project",
   },
   {
     id: 5,
@@ -273,8 +278,12 @@ export const extraProjectData: ProjectProps[] = [
     },
     Application: "2023 Portfolio",
     isFalse: true,
+    projectType: "Personal Project",
   },
+
   {
+    projectType: "Personal Project",
+
     id: 6,
 
     github: "https://github.com/Cakinn1/carRental-app",
@@ -300,6 +309,8 @@ export const extraProjectData: ProjectProps[] = [
   //   Application: "E-Commerece Site",
   // },
   {
+    projectType: "Personal Project",
+
     id: 7,
 
     github: "https://github.com/Cakinn1/Ecom-website-Anthony",
@@ -314,8 +325,8 @@ export const extraProjectData: ProjectProps[] = [
     isFalse: true,
   },
   {
+    projectType: "Personal Project",
     id: 8,
-
     github: "https://github.com/Cakinn1/2022-eportfolio",
     vercel: "https://eportfolio-five.vercel.app/",
     image: "/assets/extra-projects/2022port.png",
