@@ -103,12 +103,6 @@ export default function OpenSource() {
           para2="Developed a user-friendly task management application using ReactJS, TypeScript, Tailwind CSS, and Firebase, successfully implementing all MVP requirements: creating, assigning, updating, and deleting tasks, user authentication and data parsing/visualization with category, activity, and individual task sorting"
           para3="My biggest achievement during this program was leading the project's migration from ReactJS/JavaScript to ReactJS/TypeScript. This involved not only introducing TypeScript to the team and guiding them through its fundamentals, but also refactoring the entire codebase structure (folders/files) for optimal organization and maintainability with TypeScript in mind. I ensured everyone understood the benefits of TypeScript for code quality, maintainability, and scalability, resulting in a successfully migrated codebase."
         />
-        <Section
-          title="Chingu - Voyage 48"
-          date="March 2024 - May 2024"
-          para="Frontend Developer"
-          para1="Thrilled to build on the knowledge I gained from my last Chingu voyage by embarking on another one! This time, I'm joining Voyage 48 as a Frontend Developer. This Voyage will be completed on May 6th."
-        />
       </div>
     </div>
   );
