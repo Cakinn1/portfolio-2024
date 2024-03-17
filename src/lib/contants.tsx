@@ -1,5 +1,23 @@
 import { ImageArrayProps, ProjectLinks, ProjectProps, Stack } from "./types";
+import {
+  SiCss3,
+  SiFirebase,
+  SiHtml5,
+  SiJavascript,
+  SiMongodb,
+  SiNodedotjs,
+  SiExpress,
+  SiMongoose,
+  SiTypescript,
+  SiRedux,
+  SiNextdotjs,
+  SiTailwindcss,
+} from "react-icons/si";
 
+import { SiDjango } from "react-icons/si";
+import React from "react";
+import { FaReact } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
 /* 
 
 
@@ -59,46 +77,142 @@ Tech Stack
 
 
 */
+interface TechStack {
+  icon: React.ReactElement;
+  color: string;
+  text: string;
+}
 
-export const currentStack: Stack[] = [
+export const currentStack: TechStack[] = [
   {
-    "html.webp": "HTML",
+    icon: (
+      <SiHtml5
+        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+      />
+    ),
+    text: "HTML",
+    color: "rgb(240, 101, 41)",
   },
   {
-    "CSS.webp": "CSS",
+    icon: (
+      <SiCss3
+        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+      />
+    ),
+    text: "CSS",
+    color: "rgb(41, 101, 241)",
   },
   {
-    "js.webp": "JavaScript",
+    icon: (
+      <SiJavascript
+        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+      />
+    ),
+    text: "JavaScript",
+    color: "rgb(245, 222, 25)",
   },
   {
-    "typescript.webp": "TypeScript",
+    icon: (
+      <SiTypescript
+        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+      />
+    ),
+    text: "TypeScript",
+    color: "rgb(45, 121, 199)",
   },
   {
-    "tailwindcss.webp": "Tailwind CSS",
+    icon: (
+      <FaReact
+        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+      />
+    ),
+    text: "React.js",
+    color: "rgb(124, 197, 217)",
   },
   {
-    "redux.webp": "Redux | Redux-toolkit",
+    icon: (
+      <SiTailwindcss
+        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+      />
+    ),
+    text: "TailwindCss",
+    color: "rgb(124, 197, 217)",
   },
   {
-    "react.webp": "React.js",
+    icon: (
+      <SiRedux
+        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+      />
+    ),
+    text: "Redux",
+    color: "rgb(118,74,188)",
   },
   {
-    "nextjs.webp": "Next.js",
+    icon: (
+      <SiFirebase
+        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+      />
+    ),
+    text: "Firebase",
+    color: "rgb(246,130,13)",
   },
   {
-    "firebase.webp": "Firebase",
+    icon: (
+      <SiNextdotjs
+        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+      />
+    ),
+    text: "NextJs",
+    color: "rgb(0, 0, 0)",
   },
 ];
 
-export const currentlyLearning: Stack[] = [
+export const currentlyLearning: TechStack[] = [
   {
-    "node.png": "Node.js",
+    icon: (
+      <SiMongodb
+        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+      />
+    ),
+    text: "MongoDB",
+    color: "#3F3E42",
+  },
+
+  {
+    icon: (
+      <SiDjango
+        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+      />
+    ),
+    text: "Django",
+    color: "#3F3E42",
   },
   {
-    "python.png": "Python",
+    icon: (
+      <FaPython
+        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+      />
+    ),
+    text: "Python",
+    color: "#3F3E42",
   },
   {
-    "django.png": "Django",
+    icon: (
+      <SiNodedotjs
+        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+      />
+    ),
+    text: "Node.js",
+    color: "#68A063",
+  },
+  {
+    icon: (
+      <SiExpress
+        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+      />
+    ),
+    text: "Express.js",
+    color: "#68A063",
   },
 ];
 

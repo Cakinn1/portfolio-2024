@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { ReactElement, useEffect, useState } from "react";
 import { currentStack, currentlyLearning } from "../lib/contants";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -6,7 +6,16 @@ export default function TechStack() {
   useEffect(() => {
     AOS.init();
   }, []);
-  function HandleTechStack({ image, value }: { image: string; value: string }) {
+
+  function HandleTechStack({
+    image,
+    value,
+    color,
+  }: {
+    image: React.ReactElement;
+    value: string;
+    color: string;
+  }) {
     const [isHovered, setIsHovered] = useState<boolean>(false);
     return (
       <div
@@ -14,15 +23,17 @@ export default function TechStack() {
         data-aos-duration="1000"
         className="w-[22%] md:w-[23%] lg:w-[17%]  space-y-6 h-[180px] md:h-[160px] flex-col  flex justify-center items-center"
       >
-        <img
+        <span
+          style={{ color: `${color}` }}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          className="w-[100px] hover:scale-90    duration-300 h-[100px] object-contain"
-          src={`/assets/icons/${image}`}
-          alt=""
-        />
+          className={`w-[100px] bg-[#${color}] hover:scale-90    duration-300 h-[100px] object-contain`}
+        >
+          {image}
+        </span>
         <h1
-          className={`text-orange-500 text-center font-semibold  duration-300 transition-all ${
+          style={{ color: `${color}` }}
+          className={`text-center font-semibold  duration-300 transition-all ${
             isHovered ? "opacity-100" : "opacity-0"
           }`}
         >
@@ -49,9 +60,10 @@ export default function TechStack() {
           <div className="flex flex-wrap gap-x-6 md:gap-x-0 justify-center">
             {currentStack.map((icon) => (
               <HandleTechStack
-                value={Object.values(icon)[0]}
-                image={Object.keys(icon)[0]}
-                key={Object.values(icon)[0]}
+                key={icon.text}
+                image={icon.icon}
+                value={icon.text}
+                color={icon.color}
               />
             ))}
           </div>
@@ -78,9 +90,10 @@ export default function TechStack() {
             <div className="flex flex-wrap gap-x-6 md:gap-x-0 justify-center">
               {currentlyLearning.map((icon) => (
                 <HandleTechStack
-                  image={Object.keys(icon)[0]}
-                  key={Object.values(icon)[0]}
-                  value={Object.values(icon)[0]}
+                  key={icon.text}
+                  image={icon.icon}
+                  value={icon.text}
+                  color={icon.color}
                 />
               ))}
             </div>
