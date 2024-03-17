@@ -144,7 +144,7 @@ export const currentStack: TechStack[] = [
         className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
       />
     ),
-    text: "Redux",
+    text: "Redux / Redux-Toolkit",
     color: "rgb(118,74,188)",
   },
   {
