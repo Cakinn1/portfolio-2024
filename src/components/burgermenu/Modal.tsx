@@ -39,7 +39,7 @@ export default function Modal(props: ModalProps) {
         <RenderNav text="about" />
         <RenderNav text="skills" />
         <RenderNav text="projects" />
-        <RenderNav text="resume" />
+        {/* <RenderNav text="resume" /> */}
         <RenderNav text="contact" />
       </div>
     </div>

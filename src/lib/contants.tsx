@@ -65,7 +65,7 @@ export const projectLinksArray: ProjectLinks[] = [
     value: "projects",
   },
   {
-    link: "https://docs.google.com/document/d/1IQXaoh5fmVeK0vIEM0W1Z2DqRLPROmcb/edit",
+    link: "https://docs.google.com/document/d/1u5sZ4op350tNjRBreaQlwrWL_Zl2a5MlU9WL6-jQ34w",
     value: "resume",
   },
 ];
@@ -87,7 +87,7 @@ export const currentStack: TechStack[] = [
   {
     icon: (
       <SiHtml5
-        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+        className={`md:w-[100px]  hover:scale-90    duration-300  w-[70px] h-[70px] md:h-[100px] object-contain`}
       />
     ),
     text: "HTML",
@@ -96,7 +96,7 @@ export const currentStack: TechStack[] = [
   {
     icon: (
       <SiCss3
-        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+        className={`md:w-[100px]  hover:scale-90    duration-300 w-[70px] h-[70px] md:h-[100px] object-contain`}
       />
     ),
     text: "CSS",
@@ -105,7 +105,7 @@ export const currentStack: TechStack[] = [
   {
     icon: (
       <SiJavascript
-        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+        className={`md:w-[100px]  hover:scale-90    duration-300 w-[70px] h-[70px] md:h-[100px] object-contain`}
       />
     ),
     text: "JavaScript",
@@ -114,7 +114,7 @@ export const currentStack: TechStack[] = [
   {
     icon: (
       <SiTypescript
-        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+        className={`md:w-[100px]  hover:scale-90    duration-300 w-[70px] h-[70px] md:h-[100px] object-contain`}
       />
     ),
     text: "TypeScript",
@@ -123,7 +123,7 @@ export const currentStack: TechStack[] = [
   {
     icon: (
       <FaReact
-        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+        className={`md:w-[100px]  hover:scale-90    duration-300 w-[70px] h-[70px] md:h-[100px] object-contain`}
       />
     ),
     text: "React.js",
@@ -132,7 +132,7 @@ export const currentStack: TechStack[] = [
   {
     icon: (
       <SiTailwindcss
-        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+        className={`md:w-[100px]  hover:scale-90    duration-300 w-[70px] h-[70px] md:h-[100px] object-contain`}
       />
     ),
     text: "TailwindCss",
@@ -141,16 +141,16 @@ export const currentStack: TechStack[] = [
   {
     icon: (
       <SiRedux
-        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+        className={`md:w-[100px]  hover:scale-90    duration-300 w-[70px] h-[70px] md:h-[100px] object-contain`}
       />
     ),
-    text: "Redux / Redux-Toolkit",
+    text: "Redux",
     color: "rgb(118,74,188)",
   },
   {
     icon: (
       <SiFirebase
-        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+        className={`md:w-[100px]  hover:scale-90    duration-300 w-[70px] h-[70px] md:h-[100px] object-contain`}
       />
     ),
     text: "Firebase",
@@ -159,7 +159,7 @@ export const currentStack: TechStack[] = [
   {
     icon: (
       <SiNextdotjs
-        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+        className={`md:w-[100px]  hover:scale-90    duration-300 w-[70px] h-[70px] md:h-[100px] object-contain`}
       />
     ),
     text: "NextJs",
@@ -171,7 +171,7 @@ export const currentlyLearning: TechStack[] = [
   {
     icon: (
       <SiMongodb
-        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+        className={`md:w-[100px]  hover:scale-90    duration-300 w-[70px] h-[70px] md:h-[100px] object-contain`}
       />
     ),
     text: "MongoDB",
@@ -181,7 +181,7 @@ export const currentlyLearning: TechStack[] = [
   {
     icon: (
       <SiDjango
-        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+        className={`md:w-[100px]  hover:scale-90    duration-300 w-[70px] h-[70px] md:h-[100px] object-contain`}
       />
     ),
     text: "Django",
@@ -190,7 +190,7 @@ export const currentlyLearning: TechStack[] = [
   {
     icon: (
       <FaPython
-        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+        className={`md:w-[100px]  hover:scale-90    duration-300 w-[70px] h-[70px] md:h-[100px] object-contain`}
       />
     ),
     text: "Python",
@@ -199,7 +199,7 @@ export const currentlyLearning: TechStack[] = [
   {
     icon: (
       <SiNodedotjs
-        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+        className={`md:w-[100px]  hover:scale-90    duration-300 w-[70px] h-[70px] md:h-[100px] object-contain`}
       />
     ),
     text: "Node.js",
@@ -208,7 +208,7 @@ export const currentlyLearning: TechStack[] = [
   {
     icon: (
       <SiExpress
-        className={`w-[100px]  hover:scale-90    duration-300 h-[100px] object-contain`}
+        className={`md:w-[100px]  hover:scale-90    duration-300 w-[70px] h-[70px] md:h-[100px] object-contain`}
       />
     ),
     text: "Express.js",

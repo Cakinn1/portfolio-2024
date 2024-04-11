@@ -32,6 +32,12 @@
   box-shadow: 0px 0px 10px 2px #f70042;
 }
 
+@media (max-width: 600px) {
+  .cursor-ring {
+    display: none;
+  }
+}
+
 /* body {
   margin: 0; 
   padding: 0; 

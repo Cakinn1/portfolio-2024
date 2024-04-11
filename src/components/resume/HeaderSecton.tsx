@@ -44,11 +44,11 @@ export default function HeaderSecton() {
       <div className="flex flex-1 flex-col space-y-2">
         <div>
           <h1 className="font-bold text-3xl">Anthony Cakin</h1>
-          <h2 className="text-lg">Frontend Developer</h2>
+          <h2 className="text-lg">Software Engineer</h2>
         </div>
         <div className="flex justify-between flex-col lg:flex-row lg:items-center">
           <RenderInfo
-            link="https://docs.google.com/document/d/1IQXaoh5fmVeK0vIEM0W1Z2DqRLPROmcb/edit"
+            link="https://docs.google.com/document/d/1u5sZ4op350tNjRBreaQlwrWL_Zl2a5MlU9WL6-jQ34w"
             text="View Resume"
             icon={<PiDownloadSimpleBold className="" />}
           />
@@ -64,7 +64,7 @@ export default function HeaderSecton() {
           />
         </div>
         <p className="text-[13px]">
-          A highly motivated frontend developer prepared to utilise exceptional
+          A highly motivated Software developer prepared to utilise exceptional
           software, problem-solving and communication skills to further my
           programming passion as a web developer.
         </p>

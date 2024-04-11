@@ -27,7 +27,7 @@ export default function TechStack() {
           style={{ color: `${color}` }}
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
-          className={`w-[100px] bg-[#${color}] hover:scale-90    duration-300 h-[100px] object-contain`}
+          className={`md:w-[100px] bg-[#${color}] hover:scale-90  h-[70px] w-[70px]   duration-300 md:h-[100px] object-contain`}
         >
           {image}
         </span>
